@@ -16,5 +16,20 @@ namespace CS_Pharmacy_Management_System
         {
             InitializeComponent();
         }
+
+        private void patientBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.patientBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.pharmacyDataSet);
+
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'pharmacyDataSet.Patient' table. You can move, or remove it, as needed.
+            this.patientTableAdapter.Fill(this.pharmacyDataSet.Patient);
+
+        }
     }
 }

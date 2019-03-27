@@ -16,5 +16,20 @@ namespace CS_Pharmacy_Management_System
         {
             InitializeComponent();
         }
+
+        private void paymentBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.paymentBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.pharmacyDataSet);
+
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'pharmacyDataSet.Payment' table. You can move, or remove it, as needed.
+            this.paymentTableAdapter.Fill(this.pharmacyDataSet.Payment);
+
+        }
     }
 }
