@@ -68,7 +68,24 @@ namespace CS_Pharmacy_Management_System
 
         private void btnClear(object sender, EventArgs e)
         {
+            txtUsername.Clear();
+            txtPassword.Clear();
+            txtUsername.Focus();
 
+            btnGP.Enabled = false;
+            btnPatient.Enabled = false;
+            btnDoctor.Enabled = false;
+            btnPatient.Enabled = false;
+            btnPayment.Enabled = false;
+            btnPharmacy.Enabled = false;
+            btnPharmacy_Office.Enabled = false;
+
+            btnSurgery.Enabled = false;
+            btnHospital.Enabled = false;
+            btnSpecialist.Enabled = false;
+            btnConsultant.Enabled = false;
+            btnPharmacist.Enabled = false;
+            btnPharma.Enabled = false;
         }
 
         private void btnLogin(object sender, EventArgs e)
@@ -82,10 +99,18 @@ namespace CS_Pharmacy_Management_System
                 btnPayment.Enabled = true;
                 btnPharmacy.Enabled = true;
                 btnPharmacy_Office.Enabled = true;
+
+                btnSurgery.Enabled = true;
+                btnHospital.Enabled = true;
+                btnSpecialist.Enabled = true;
+                btnConsultant.Enabled = true;
+                btnPharmacist.Enabled = true;
+                btnPharma.Enabled = true;
             }
             else
             {
                 MessageBox.Show("Please enter the correct Username or Password", "Pharmacy Management System");
+                txtUsername.Focus();
             }
         }
 
@@ -98,6 +123,14 @@ namespace CS_Pharmacy_Management_System
             btnPayment.Enabled = false;
             btnPharmacy.Enabled = false;
             btnPharmacy_Office.Enabled = false;
+
+            btnSurgery.Enabled = false;
+            btnHospital.Enabled = false;
+            btnSpecialist.Enabled = false;
+            btnConsultant.Enabled = false;
+            btnPharmacist.Enabled = false;
+            btnPharma.Enabled = false;
+
         }
 
     }

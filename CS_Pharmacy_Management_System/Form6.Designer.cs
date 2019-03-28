@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             System.Windows.Forms.Label reference_NumberLabel;
             System.Windows.Forms.Label name_of_TabletsLabel;
             System.Windows.Forms.Label dose__mg_Label;
@@ -46,22 +45,23 @@
             System.Windows.Forms.Label how_to_Use_MedicationLabel;
             System.Windows.Forms.Label patient__IDLabel;
             System.Windows.Forms.Label doctor_s_NHS_NoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.pharmacyDataSet = new CS_Pharmacy_Management_System.PharmacyDataSet();
             this.pharmacyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pharmacyTableAdapter = new CS_Pharmacy_Management_System.PharmacyDataSetTableAdapters.PharmacyTableAdapter();
             this.tableAdapterManager = new CS_Pharmacy_Management_System.PharmacyDataSetTableAdapters.TableAdapterManager();
             this.pharmacyBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.pharmacyBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.reference_NumberTextBox = new System.Windows.Forms.TextBox();
             this.name_of_TabletsTextBox = new System.Windows.Forms.TextBox();
@@ -100,6 +100,150 @@
             ((System.ComponentModel.ISupportInitialize)(this.pharmacyBindingNavigator)).BeginInit();
             this.pharmacyBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // reference_NumberLabel
+            // 
+            reference_NumberLabel.AutoSize = true;
+            reference_NumberLabel.Location = new System.Drawing.Point(296, 54);
+            reference_NumberLabel.Name = "reference_NumberLabel";
+            reference_NumberLabel.Size = new System.Drawing.Size(100, 13);
+            reference_NumberLabel.TabIndex = 1;
+            reference_NumberLabel.Text = "Reference Number:";
+            // 
+            // name_of_TabletsLabel
+            // 
+            name_of_TabletsLabel.AutoSize = true;
+            name_of_TabletsLabel.Location = new System.Drawing.Point(296, 80);
+            name_of_TabletsLabel.Name = "name_of_TabletsLabel";
+            name_of_TabletsLabel.Size = new System.Drawing.Size(88, 13);
+            name_of_TabletsLabel.TabIndex = 3;
+            name_of_TabletsLabel.Text = "Name of Tablets:";
+            // 
+            // dose__mg_Label
+            // 
+            dose__mg_Label.AutoSize = true;
+            dose__mg_Label.Location = new System.Drawing.Point(296, 106);
+            dose__mg_Label.Name = "dose__mg_Label";
+            dose__mg_Label.Size = new System.Drawing.Size(58, 13);
+            dose__mg_Label.TabIndex = 5;
+            dose__mg_Label.Text = "Dose (mg):";
+            // 
+            // number_of_TabletsLabel
+            // 
+            number_of_TabletsLabel.AutoSize = true;
+            number_of_TabletsLabel.Location = new System.Drawing.Point(296, 132);
+            number_of_TabletsLabel.Name = "number_of_TabletsLabel";
+            number_of_TabletsLabel.Size = new System.Drawing.Size(97, 13);
+            number_of_TabletsLabel.TabIndex = 7;
+            number_of_TabletsLabel.Text = "Number of Tablets:";
+            // 
+            // lOTLabel
+            // 
+            lOTLabel.AutoSize = true;
+            lOTLabel.Location = new System.Drawing.Point(296, 158);
+            lOTLabel.Name = "lOTLabel";
+            lOTLabel.Size = new System.Drawing.Size(31, 13);
+            lOTLabel.TabIndex = 9;
+            lOTLabel.Text = "LOT:";
+            // 
+            // issued_DateLabel
+            // 
+            issued_DateLabel.AutoSize = true;
+            issued_DateLabel.Location = new System.Drawing.Point(296, 184);
+            issued_DateLabel.Name = "issued_DateLabel";
+            issued_DateLabel.Size = new System.Drawing.Size(67, 13);
+            issued_DateLabel.TabIndex = 11;
+            issued_DateLabel.Text = "Issued Date:";
+            // 
+            // exp_DateLabel
+            // 
+            exp_DateLabel.AutoSize = true;
+            exp_DateLabel.Location = new System.Drawing.Point(296, 210);
+            exp_DateLabel.Name = "exp_DateLabel";
+            exp_DateLabel.Size = new System.Drawing.Size(54, 13);
+            exp_DateLabel.TabIndex = 13;
+            exp_DateLabel.Text = "Exp Date:";
+            // 
+            // daily_DoseLabel
+            // 
+            daily_DoseLabel.AutoSize = true;
+            daily_DoseLabel.Location = new System.Drawing.Point(296, 236);
+            daily_DoseLabel.Name = "daily_DoseLabel";
+            daily_DoseLabel.Size = new System.Drawing.Size(61, 13);
+            daily_DoseLabel.TabIndex = 15;
+            daily_DoseLabel.Text = "Daily Dose:";
+            // 
+            // possible_Side_EffectsLabel
+            // 
+            possible_Side_EffectsLabel.AutoSize = true;
+            possible_Side_EffectsLabel.Location = new System.Drawing.Point(296, 262);
+            possible_Side_EffectsLabel.Name = "possible_Side_EffectsLabel";
+            possible_Side_EffectsLabel.Size = new System.Drawing.Size(109, 13);
+            possible_Side_EffectsLabel.TabIndex = 17;
+            possible_Side_EffectsLabel.Text = "Possible Side Effects:";
+            // 
+            // further_InformationLabel
+            // 
+            further_InformationLabel.AutoSize = true;
+            further_InformationLabel.Location = new System.Drawing.Point(296, 288);
+            further_InformationLabel.Name = "further_InformationLabel";
+            further_InformationLabel.Size = new System.Drawing.Size(98, 13);
+            further_InformationLabel.TabIndex = 19;
+            further_InformationLabel.Text = "Further Information:";
+            // 
+            // storage_AdviceLabel
+            // 
+            storage_AdviceLabel.AutoSize = true;
+            storage_AdviceLabel.Location = new System.Drawing.Point(296, 314);
+            storage_AdviceLabel.Name = "storage_AdviceLabel";
+            storage_AdviceLabel.Size = new System.Drawing.Size(83, 13);
+            storage_AdviceLabel.TabIndex = 21;
+            storage_AdviceLabel.Text = "Storage Advice:";
+            // 
+            // administrationLabel
+            // 
+            administrationLabel.AutoSize = true;
+            administrationLabel.Location = new System.Drawing.Point(296, 340);
+            administrationLabel.Name = "administrationLabel";
+            administrationLabel.Size = new System.Drawing.Size(75, 13);
+            administrationLabel.TabIndex = 23;
+            administrationLabel.Text = "Administration:";
+            // 
+            // driving_and_Using_MachinesLabel
+            // 
+            driving_and_Using_MachinesLabel.AutoSize = true;
+            driving_and_Using_MachinesLabel.Location = new System.Drawing.Point(296, 366);
+            driving_and_Using_MachinesLabel.Name = "driving_and_Using_MachinesLabel";
+            driving_and_Using_MachinesLabel.Size = new System.Drawing.Size(143, 13);
+            driving_and_Using_MachinesLabel.TabIndex = 25;
+            driving_and_Using_MachinesLabel.Text = "Driving and Using Machines:";
+            // 
+            // how_to_Use_MedicationLabel
+            // 
+            how_to_Use_MedicationLabel.AutoSize = true;
+            how_to_Use_MedicationLabel.Location = new System.Drawing.Point(296, 392);
+            how_to_Use_MedicationLabel.Name = "how_to_Use_MedicationLabel";
+            how_to_Use_MedicationLabel.Size = new System.Drawing.Size(121, 13);
+            how_to_Use_MedicationLabel.TabIndex = 27;
+            how_to_Use_MedicationLabel.Text = "How to Use Medication:";
+            // 
+            // patient__IDLabel
+            // 
+            patient__IDLabel.AutoSize = true;
+            patient__IDLabel.Location = new System.Drawing.Point(296, 418);
+            patient__IDLabel.Name = "patient__IDLabel";
+            patient__IDLabel.Size = new System.Drawing.Size(60, 13);
+            patient__IDLabel.TabIndex = 29;
+            patient__IDLabel.Text = "Patient  ID:";
+            // 
+            // doctor_s_NHS_NoLabel
+            // 
+            doctor_s_NHS_NoLabel.AutoSize = true;
+            doctor_s_NHS_NoLabel.Location = new System.Drawing.Point(296, 444);
+            doctor_s_NHS_NoLabel.Name = "doctor_s_NHS_NoLabel";
+            doctor_s_NHS_NoLabel.Size = new System.Drawing.Size(92, 13);
+            doctor_s_NHS_NoLabel.TabIndex = 31;
+            doctor_s_NHS_NoLabel.Text = "Doctor\'s NHS No:";
             // 
             // pharmacyDataSet
             // 
@@ -155,6 +299,31 @@
             this.pharmacyBindingNavigator.TabIndex = 0;
             this.pharmacyBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -187,17 +356,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -205,7 +367,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -214,309 +376,147 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // pharmacyBindingNavigatorSaveItem
             // 
             this.pharmacyBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.pharmacyBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pharmacyBindingNavigatorSaveItem.Image")));
             this.pharmacyBindingNavigatorSaveItem.Name = "pharmacyBindingNavigatorSaveItem";
-            this.pharmacyBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.pharmacyBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.pharmacyBindingNavigatorSaveItem.Text = "Save Data";
             this.pharmacyBindingNavigatorSaveItem.Click += new System.EventHandler(this.pharmacyBindingNavigatorSaveItem_Click);
-            // 
-            // reference_NumberLabel
-            // 
-            reference_NumberLabel.AutoSize = true;
-            reference_NumberLabel.Location = new System.Drawing.Point(64, 60);
-            reference_NumberLabel.Name = "reference_NumberLabel";
-            reference_NumberLabel.Size = new System.Drawing.Size(100, 13);
-            reference_NumberLabel.TabIndex = 1;
-            reference_NumberLabel.Text = "Reference Number:";
             // 
             // reference_NumberTextBox
             // 
             this.reference_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Reference Number", true));
-            this.reference_NumberTextBox.Location = new System.Drawing.Point(213, 57);
+            this.reference_NumberTextBox.Location = new System.Drawing.Point(445, 51);
             this.reference_NumberTextBox.Name = "reference_NumberTextBox";
             this.reference_NumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.reference_NumberTextBox.TabIndex = 2;
             // 
-            // name_of_TabletsLabel
-            // 
-            name_of_TabletsLabel.AutoSize = true;
-            name_of_TabletsLabel.Location = new System.Drawing.Point(64, 86);
-            name_of_TabletsLabel.Name = "name_of_TabletsLabel";
-            name_of_TabletsLabel.Size = new System.Drawing.Size(88, 13);
-            name_of_TabletsLabel.TabIndex = 3;
-            name_of_TabletsLabel.Text = "Name of Tablets:";
-            // 
             // name_of_TabletsTextBox
             // 
             this.name_of_TabletsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Name of Tablets", true));
-            this.name_of_TabletsTextBox.Location = new System.Drawing.Point(213, 83);
+            this.name_of_TabletsTextBox.Location = new System.Drawing.Point(445, 77);
             this.name_of_TabletsTextBox.Name = "name_of_TabletsTextBox";
             this.name_of_TabletsTextBox.Size = new System.Drawing.Size(100, 20);
             this.name_of_TabletsTextBox.TabIndex = 4;
             // 
-            // dose__mg_Label
-            // 
-            dose__mg_Label.AutoSize = true;
-            dose__mg_Label.Location = new System.Drawing.Point(64, 112);
-            dose__mg_Label.Name = "dose__mg_Label";
-            dose__mg_Label.Size = new System.Drawing.Size(58, 13);
-            dose__mg_Label.TabIndex = 5;
-            dose__mg_Label.Text = "Dose (mg):";
-            // 
             // dose__mg_TextBox
             // 
             this.dose__mg_TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Dose (mg)", true));
-            this.dose__mg_TextBox.Location = new System.Drawing.Point(213, 109);
+            this.dose__mg_TextBox.Location = new System.Drawing.Point(445, 103);
             this.dose__mg_TextBox.Name = "dose__mg_TextBox";
             this.dose__mg_TextBox.Size = new System.Drawing.Size(100, 20);
             this.dose__mg_TextBox.TabIndex = 6;
             // 
-            // number_of_TabletsLabel
-            // 
-            number_of_TabletsLabel.AutoSize = true;
-            number_of_TabletsLabel.Location = new System.Drawing.Point(64, 138);
-            number_of_TabletsLabel.Name = "number_of_TabletsLabel";
-            number_of_TabletsLabel.Size = new System.Drawing.Size(97, 13);
-            number_of_TabletsLabel.TabIndex = 7;
-            number_of_TabletsLabel.Text = "Number of Tablets:";
-            // 
             // number_of_TabletsTextBox
             // 
             this.number_of_TabletsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Number of Tablets", true));
-            this.number_of_TabletsTextBox.Location = new System.Drawing.Point(213, 135);
+            this.number_of_TabletsTextBox.Location = new System.Drawing.Point(445, 129);
             this.number_of_TabletsTextBox.Name = "number_of_TabletsTextBox";
             this.number_of_TabletsTextBox.Size = new System.Drawing.Size(100, 20);
             this.number_of_TabletsTextBox.TabIndex = 8;
             // 
-            // lOTLabel
-            // 
-            lOTLabel.AutoSize = true;
-            lOTLabel.Location = new System.Drawing.Point(64, 164);
-            lOTLabel.Name = "lOTLabel";
-            lOTLabel.Size = new System.Drawing.Size(31, 13);
-            lOTLabel.TabIndex = 9;
-            lOTLabel.Text = "LOT:";
-            // 
             // lOTTextBox
             // 
             this.lOTTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "LOT", true));
-            this.lOTTextBox.Location = new System.Drawing.Point(213, 161);
+            this.lOTTextBox.Location = new System.Drawing.Point(445, 155);
             this.lOTTextBox.Name = "lOTTextBox";
             this.lOTTextBox.Size = new System.Drawing.Size(100, 20);
             this.lOTTextBox.TabIndex = 10;
             // 
-            // issued_DateLabel
-            // 
-            issued_DateLabel.AutoSize = true;
-            issued_DateLabel.Location = new System.Drawing.Point(64, 190);
-            issued_DateLabel.Name = "issued_DateLabel";
-            issued_DateLabel.Size = new System.Drawing.Size(67, 13);
-            issued_DateLabel.TabIndex = 11;
-            issued_DateLabel.Text = "Issued Date:";
-            // 
             // issued_DateTextBox
             // 
             this.issued_DateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Issued Date", true));
-            this.issued_DateTextBox.Location = new System.Drawing.Point(213, 187);
+            this.issued_DateTextBox.Location = new System.Drawing.Point(445, 181);
             this.issued_DateTextBox.Name = "issued_DateTextBox";
             this.issued_DateTextBox.Size = new System.Drawing.Size(100, 20);
             this.issued_DateTextBox.TabIndex = 12;
             // 
-            // exp_DateLabel
-            // 
-            exp_DateLabel.AutoSize = true;
-            exp_DateLabel.Location = new System.Drawing.Point(64, 216);
-            exp_DateLabel.Name = "exp_DateLabel";
-            exp_DateLabel.Size = new System.Drawing.Size(54, 13);
-            exp_DateLabel.TabIndex = 13;
-            exp_DateLabel.Text = "Exp Date:";
-            // 
             // exp_DateTextBox
             // 
             this.exp_DateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Exp Date", true));
-            this.exp_DateTextBox.Location = new System.Drawing.Point(213, 213);
+            this.exp_DateTextBox.Location = new System.Drawing.Point(445, 207);
             this.exp_DateTextBox.Name = "exp_DateTextBox";
             this.exp_DateTextBox.Size = new System.Drawing.Size(100, 20);
             this.exp_DateTextBox.TabIndex = 14;
             // 
-            // daily_DoseLabel
-            // 
-            daily_DoseLabel.AutoSize = true;
-            daily_DoseLabel.Location = new System.Drawing.Point(64, 242);
-            daily_DoseLabel.Name = "daily_DoseLabel";
-            daily_DoseLabel.Size = new System.Drawing.Size(61, 13);
-            daily_DoseLabel.TabIndex = 15;
-            daily_DoseLabel.Text = "Daily Dose:";
-            // 
             // daily_DoseTextBox
             // 
             this.daily_DoseTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Daily Dose", true));
-            this.daily_DoseTextBox.Location = new System.Drawing.Point(213, 239);
+            this.daily_DoseTextBox.Location = new System.Drawing.Point(445, 233);
             this.daily_DoseTextBox.Name = "daily_DoseTextBox";
             this.daily_DoseTextBox.Size = new System.Drawing.Size(100, 20);
             this.daily_DoseTextBox.TabIndex = 16;
             // 
-            // possible_Side_EffectsLabel
-            // 
-            possible_Side_EffectsLabel.AutoSize = true;
-            possible_Side_EffectsLabel.Location = new System.Drawing.Point(64, 268);
-            possible_Side_EffectsLabel.Name = "possible_Side_EffectsLabel";
-            possible_Side_EffectsLabel.Size = new System.Drawing.Size(109, 13);
-            possible_Side_EffectsLabel.TabIndex = 17;
-            possible_Side_EffectsLabel.Text = "Possible Side Effects:";
-            // 
             // possible_Side_EffectsTextBox
             // 
             this.possible_Side_EffectsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Possible Side Effects", true));
-            this.possible_Side_EffectsTextBox.Location = new System.Drawing.Point(213, 265);
+            this.possible_Side_EffectsTextBox.Location = new System.Drawing.Point(445, 259);
             this.possible_Side_EffectsTextBox.Name = "possible_Side_EffectsTextBox";
             this.possible_Side_EffectsTextBox.Size = new System.Drawing.Size(100, 20);
             this.possible_Side_EffectsTextBox.TabIndex = 18;
             // 
-            // further_InformationLabel
-            // 
-            further_InformationLabel.AutoSize = true;
-            further_InformationLabel.Location = new System.Drawing.Point(64, 294);
-            further_InformationLabel.Name = "further_InformationLabel";
-            further_InformationLabel.Size = new System.Drawing.Size(98, 13);
-            further_InformationLabel.TabIndex = 19;
-            further_InformationLabel.Text = "Further Information:";
-            // 
             // further_InformationTextBox
             // 
             this.further_InformationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Further Information", true));
-            this.further_InformationTextBox.Location = new System.Drawing.Point(213, 291);
+            this.further_InformationTextBox.Location = new System.Drawing.Point(445, 285);
             this.further_InformationTextBox.Name = "further_InformationTextBox";
             this.further_InformationTextBox.Size = new System.Drawing.Size(100, 20);
             this.further_InformationTextBox.TabIndex = 20;
             // 
-            // storage_AdviceLabel
-            // 
-            storage_AdviceLabel.AutoSize = true;
-            storage_AdviceLabel.Location = new System.Drawing.Point(64, 320);
-            storage_AdviceLabel.Name = "storage_AdviceLabel";
-            storage_AdviceLabel.Size = new System.Drawing.Size(83, 13);
-            storage_AdviceLabel.TabIndex = 21;
-            storage_AdviceLabel.Text = "Storage Advice:";
-            // 
             // storage_AdviceTextBox
             // 
             this.storage_AdviceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Storage Advice", true));
-            this.storage_AdviceTextBox.Location = new System.Drawing.Point(213, 317);
+            this.storage_AdviceTextBox.Location = new System.Drawing.Point(445, 311);
             this.storage_AdviceTextBox.Name = "storage_AdviceTextBox";
             this.storage_AdviceTextBox.Size = new System.Drawing.Size(100, 20);
             this.storage_AdviceTextBox.TabIndex = 22;
             // 
-            // administrationLabel
-            // 
-            administrationLabel.AutoSize = true;
-            administrationLabel.Location = new System.Drawing.Point(64, 346);
-            administrationLabel.Name = "administrationLabel";
-            administrationLabel.Size = new System.Drawing.Size(75, 13);
-            administrationLabel.TabIndex = 23;
-            administrationLabel.Text = "Administration:";
-            // 
             // administrationTextBox
             // 
             this.administrationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Administration", true));
-            this.administrationTextBox.Location = new System.Drawing.Point(213, 343);
+            this.administrationTextBox.Location = new System.Drawing.Point(445, 337);
             this.administrationTextBox.Name = "administrationTextBox";
             this.administrationTextBox.Size = new System.Drawing.Size(100, 20);
             this.administrationTextBox.TabIndex = 24;
             // 
-            // driving_and_Using_MachinesLabel
-            // 
-            driving_and_Using_MachinesLabel.AutoSize = true;
-            driving_and_Using_MachinesLabel.Location = new System.Drawing.Point(64, 372);
-            driving_and_Using_MachinesLabel.Name = "driving_and_Using_MachinesLabel";
-            driving_and_Using_MachinesLabel.Size = new System.Drawing.Size(143, 13);
-            driving_and_Using_MachinesLabel.TabIndex = 25;
-            driving_and_Using_MachinesLabel.Text = "Driving and Using Machines:";
-            // 
             // driving_and_Using_MachinesTextBox
             // 
             this.driving_and_Using_MachinesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Driving and Using Machines", true));
-            this.driving_and_Using_MachinesTextBox.Location = new System.Drawing.Point(213, 369);
+            this.driving_and_Using_MachinesTextBox.Location = new System.Drawing.Point(445, 363);
             this.driving_and_Using_MachinesTextBox.Name = "driving_and_Using_MachinesTextBox";
             this.driving_and_Using_MachinesTextBox.Size = new System.Drawing.Size(100, 20);
             this.driving_and_Using_MachinesTextBox.TabIndex = 26;
             // 
-            // how_to_Use_MedicationLabel
-            // 
-            how_to_Use_MedicationLabel.AutoSize = true;
-            how_to_Use_MedicationLabel.Location = new System.Drawing.Point(64, 398);
-            how_to_Use_MedicationLabel.Name = "how_to_Use_MedicationLabel";
-            how_to_Use_MedicationLabel.Size = new System.Drawing.Size(121, 13);
-            how_to_Use_MedicationLabel.TabIndex = 27;
-            how_to_Use_MedicationLabel.Text = "How to Use Medication:";
-            // 
             // how_to_Use_MedicationTextBox
             // 
             this.how_to_Use_MedicationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "How to Use Medication", true));
-            this.how_to_Use_MedicationTextBox.Location = new System.Drawing.Point(213, 395);
+            this.how_to_Use_MedicationTextBox.Location = new System.Drawing.Point(445, 389);
             this.how_to_Use_MedicationTextBox.Name = "how_to_Use_MedicationTextBox";
             this.how_to_Use_MedicationTextBox.Size = new System.Drawing.Size(100, 20);
             this.how_to_Use_MedicationTextBox.TabIndex = 28;
             // 
-            // patient__IDLabel
-            // 
-            patient__IDLabel.AutoSize = true;
-            patient__IDLabel.Location = new System.Drawing.Point(64, 424);
-            patient__IDLabel.Name = "patient__IDLabel";
-            patient__IDLabel.Size = new System.Drawing.Size(60, 13);
-            patient__IDLabel.TabIndex = 29;
-            patient__IDLabel.Text = "Patient  ID:";
-            // 
             // patient__IDTextBox
             // 
             this.patient__IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Patient  ID", true));
-            this.patient__IDTextBox.Location = new System.Drawing.Point(213, 421);
+            this.patient__IDTextBox.Location = new System.Drawing.Point(445, 415);
             this.patient__IDTextBox.Name = "patient__IDTextBox";
             this.patient__IDTextBox.Size = new System.Drawing.Size(100, 20);
             this.patient__IDTextBox.TabIndex = 30;
             // 
-            // doctor_s_NHS_NoLabel
-            // 
-            doctor_s_NHS_NoLabel.AutoSize = true;
-            doctor_s_NHS_NoLabel.Location = new System.Drawing.Point(64, 450);
-            doctor_s_NHS_NoLabel.Name = "doctor_s_NHS_NoLabel";
-            doctor_s_NHS_NoLabel.Size = new System.Drawing.Size(92, 13);
-            doctor_s_NHS_NoLabel.TabIndex = 31;
-            doctor_s_NHS_NoLabel.Text = "Doctor\'s NHS No:";
-            // 
             // doctor_s_NHS_NoTextBox
             // 
             this.doctor_s_NHS_NoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Doctor\'s NHS No", true));
-            this.doctor_s_NHS_NoTextBox.Location = new System.Drawing.Point(213, 447);
+            this.doctor_s_NHS_NoTextBox.Location = new System.Drawing.Point(445, 441);
             this.doctor_s_NHS_NoTextBox.Name = "doctor_s_NHS_NoTextBox";
             this.doctor_s_NHS_NoTextBox.Size = new System.Drawing.Size(100, 20);
             this.doctor_s_NHS_NoTextBox.TabIndex = 32;

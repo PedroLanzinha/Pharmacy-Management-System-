@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             System.Windows.Forms.Label gP_Appointment_RefLabel;
             System.Windows.Forms.Label patient_NHS_NumberLabel;
             System.Windows.Forms.Label eMIS_NumberLabel;
@@ -38,22 +37,23 @@
             System.Windows.Forms.Label patient_IDLabel;
             System.Windows.Forms.Label medical_Centre_NameLabel;
             System.Windows.Forms.Label doctor_s_NHS_NoLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
             this.pharmacyDataSet = new CS_Pharmacy_Management_System.PharmacyDataSet();
             this.gP_AppointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gP_AppointmentTableAdapter = new CS_Pharmacy_Management_System.PharmacyDataSetTableAdapters.GP_AppointmentTableAdapter();
             this.tableAdapterManager = new CS_Pharmacy_Management_System.PharmacyDataSetTableAdapters.TableAdapterManager();
             this.gP_AppointmentBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.gP_AppointmentBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.gP_Appointment_RefTextBox = new System.Windows.Forms.TextBox();
             this.patient_NHS_NumberTextBox = new System.Windows.Forms.TextBox();
@@ -76,6 +76,78 @@
             ((System.ComponentModel.ISupportInitialize)(this.gP_AppointmentBindingNavigator)).BeginInit();
             this.gP_AppointmentBindingNavigator.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // gP_Appointment_RefLabel
+            // 
+            gP_Appointment_RefLabel.AutoSize = true;
+            gP_Appointment_RefLabel.Location = new System.Drawing.Point(317, 150);
+            gP_Appointment_RefLabel.Name = "gP_Appointment_RefLabel";
+            gP_Appointment_RefLabel.Size = new System.Drawing.Size(107, 13);
+            gP_Appointment_RefLabel.TabIndex = 1;
+            gP_Appointment_RefLabel.Text = "GP Appointment Ref:";
+            // 
+            // patient_NHS_NumberLabel
+            // 
+            patient_NHS_NumberLabel.AutoSize = true;
+            patient_NHS_NumberLabel.Location = new System.Drawing.Point(317, 176);
+            patient_NHS_NumberLabel.Name = "patient_NHS_NumberLabel";
+            patient_NHS_NumberLabel.Size = new System.Drawing.Size(109, 13);
+            patient_NHS_NumberLabel.TabIndex = 3;
+            patient_NHS_NumberLabel.Text = "Patient NHS Number:";
+            // 
+            // eMIS_NumberLabel
+            // 
+            eMIS_NumberLabel.AutoSize = true;
+            eMIS_NumberLabel.Location = new System.Drawing.Point(317, 202);
+            eMIS_NumberLabel.Name = "eMIS_NumberLabel";
+            eMIS_NumberLabel.Size = new System.Drawing.Size(76, 13);
+            eMIS_NumberLabel.TabIndex = 5;
+            eMIS_NumberLabel.Text = "EMIS Number:";
+            // 
+            // gP_AppointmentLabel
+            // 
+            gP_AppointmentLabel.AutoSize = true;
+            gP_AppointmentLabel.Location = new System.Drawing.Point(317, 228);
+            gP_AppointmentLabel.Name = "gP_AppointmentLabel";
+            gP_AppointmentLabel.Size = new System.Drawing.Size(87, 13);
+            gP_AppointmentLabel.TabIndex = 7;
+            gP_AppointmentLabel.Text = "GP Appointment:";
+            // 
+            // patient_Full_NameLabel
+            // 
+            patient_Full_NameLabel.AutoSize = true;
+            patient_Full_NameLabel.Location = new System.Drawing.Point(317, 254);
+            patient_Full_NameLabel.Name = "patient_Full_NameLabel";
+            patient_Full_NameLabel.Size = new System.Drawing.Size(93, 13);
+            patient_Full_NameLabel.TabIndex = 9;
+            patient_Full_NameLabel.Text = "Patient Full Name:";
+            // 
+            // patient_IDLabel
+            // 
+            patient_IDLabel.AutoSize = true;
+            patient_IDLabel.Location = new System.Drawing.Point(317, 280);
+            patient_IDLabel.Name = "patient_IDLabel";
+            patient_IDLabel.Size = new System.Drawing.Size(57, 13);
+            patient_IDLabel.TabIndex = 11;
+            patient_IDLabel.Text = "Patient ID:";
+            // 
+            // medical_Centre_NameLabel
+            // 
+            medical_Centre_NameLabel.AutoSize = true;
+            medical_Centre_NameLabel.Location = new System.Drawing.Point(317, 306);
+            medical_Centre_NameLabel.Name = "medical_Centre_NameLabel";
+            medical_Centre_NameLabel.Size = new System.Drawing.Size(112, 13);
+            medical_Centre_NameLabel.TabIndex = 13;
+            medical_Centre_NameLabel.Text = "Medical Centre Name:";
+            // 
+            // doctor_s_NHS_NoLabel
+            // 
+            doctor_s_NHS_NoLabel.AutoSize = true;
+            doctor_s_NHS_NoLabel.Location = new System.Drawing.Point(317, 332);
+            doctor_s_NHS_NoLabel.Name = "doctor_s_NHS_NoLabel";
+            doctor_s_NHS_NoLabel.Size = new System.Drawing.Size(92, 13);
+            doctor_s_NHS_NoLabel.TabIndex = 15;
+            doctor_s_NHS_NoLabel.Text = "Doctor\'s NHS No:";
             // 
             // pharmacyDataSet
             // 
@@ -131,6 +203,31 @@
             this.gP_AppointmentBindingNavigator.TabIndex = 0;
             this.gP_AppointmentBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Delete";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -163,17 +260,10 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 15);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -181,7 +271,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -190,173 +280,83 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // gP_AppointmentBindingNavigatorSaveItem
             // 
             this.gP_AppointmentBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.gP_AppointmentBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("gP_AppointmentBindingNavigatorSaveItem.Image")));
             this.gP_AppointmentBindingNavigatorSaveItem.Name = "gP_AppointmentBindingNavigatorSaveItem";
-            this.gP_AppointmentBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.gP_AppointmentBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.gP_AppointmentBindingNavigatorSaveItem.Text = "Save Data";
             this.gP_AppointmentBindingNavigatorSaveItem.Click += new System.EventHandler(this.gP_AppointmentBindingNavigatorSaveItem_Click);
-            // 
-            // gP_Appointment_RefLabel
-            // 
-            gP_Appointment_RefLabel.AutoSize = true;
-            gP_Appointment_RefLabel.Location = new System.Drawing.Point(53, 53);
-            gP_Appointment_RefLabel.Name = "gP_Appointment_RefLabel";
-            gP_Appointment_RefLabel.Size = new System.Drawing.Size(107, 13);
-            gP_Appointment_RefLabel.TabIndex = 1;
-            gP_Appointment_RefLabel.Text = "GP Appointment Ref:";
             // 
             // gP_Appointment_RefTextBox
             // 
             this.gP_Appointment_RefTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gP_AppointmentBindingSource, "GP Appointment Ref", true));
-            this.gP_Appointment_RefTextBox.Location = new System.Drawing.Point(171, 50);
+            this.gP_Appointment_RefTextBox.Location = new System.Drawing.Point(435, 147);
             this.gP_Appointment_RefTextBox.Name = "gP_Appointment_RefTextBox";
             this.gP_Appointment_RefTextBox.Size = new System.Drawing.Size(100, 20);
             this.gP_Appointment_RefTextBox.TabIndex = 2;
             // 
-            // patient_NHS_NumberLabel
-            // 
-            patient_NHS_NumberLabel.AutoSize = true;
-            patient_NHS_NumberLabel.Location = new System.Drawing.Point(53, 79);
-            patient_NHS_NumberLabel.Name = "patient_NHS_NumberLabel";
-            patient_NHS_NumberLabel.Size = new System.Drawing.Size(109, 13);
-            patient_NHS_NumberLabel.TabIndex = 3;
-            patient_NHS_NumberLabel.Text = "Patient NHS Number:";
-            // 
             // patient_NHS_NumberTextBox
             // 
             this.patient_NHS_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gP_AppointmentBindingSource, "Patient NHS Number", true));
-            this.patient_NHS_NumberTextBox.Location = new System.Drawing.Point(171, 76);
+            this.patient_NHS_NumberTextBox.Location = new System.Drawing.Point(435, 173);
             this.patient_NHS_NumberTextBox.Name = "patient_NHS_NumberTextBox";
             this.patient_NHS_NumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.patient_NHS_NumberTextBox.TabIndex = 4;
             // 
-            // eMIS_NumberLabel
-            // 
-            eMIS_NumberLabel.AutoSize = true;
-            eMIS_NumberLabel.Location = new System.Drawing.Point(53, 105);
-            eMIS_NumberLabel.Name = "eMIS_NumberLabel";
-            eMIS_NumberLabel.Size = new System.Drawing.Size(76, 13);
-            eMIS_NumberLabel.TabIndex = 5;
-            eMIS_NumberLabel.Text = "EMIS Number:";
-            // 
             // eMIS_NumberTextBox
             // 
             this.eMIS_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gP_AppointmentBindingSource, "EMIS Number", true));
-            this.eMIS_NumberTextBox.Location = new System.Drawing.Point(171, 102);
+            this.eMIS_NumberTextBox.Location = new System.Drawing.Point(435, 199);
             this.eMIS_NumberTextBox.Name = "eMIS_NumberTextBox";
             this.eMIS_NumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.eMIS_NumberTextBox.TabIndex = 6;
             // 
-            // gP_AppointmentLabel
-            // 
-            gP_AppointmentLabel.AutoSize = true;
-            gP_AppointmentLabel.Location = new System.Drawing.Point(53, 131);
-            gP_AppointmentLabel.Name = "gP_AppointmentLabel";
-            gP_AppointmentLabel.Size = new System.Drawing.Size(87, 13);
-            gP_AppointmentLabel.TabIndex = 7;
-            gP_AppointmentLabel.Text = "GP Appointment:";
-            // 
             // gP_AppointmentTextBox
             // 
             this.gP_AppointmentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gP_AppointmentBindingSource, "GP Appointment", true));
-            this.gP_AppointmentTextBox.Location = new System.Drawing.Point(171, 128);
+            this.gP_AppointmentTextBox.Location = new System.Drawing.Point(435, 225);
             this.gP_AppointmentTextBox.Name = "gP_AppointmentTextBox";
             this.gP_AppointmentTextBox.Size = new System.Drawing.Size(100, 20);
             this.gP_AppointmentTextBox.TabIndex = 8;
             // 
-            // patient_Full_NameLabel
-            // 
-            patient_Full_NameLabel.AutoSize = true;
-            patient_Full_NameLabel.Location = new System.Drawing.Point(53, 157);
-            patient_Full_NameLabel.Name = "patient_Full_NameLabel";
-            patient_Full_NameLabel.Size = new System.Drawing.Size(93, 13);
-            patient_Full_NameLabel.TabIndex = 9;
-            patient_Full_NameLabel.Text = "Patient Full Name:";
-            // 
             // patient_Full_NameTextBox
             // 
             this.patient_Full_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gP_AppointmentBindingSource, "Patient Full Name", true));
-            this.patient_Full_NameTextBox.Location = new System.Drawing.Point(171, 154);
+            this.patient_Full_NameTextBox.Location = new System.Drawing.Point(435, 251);
             this.patient_Full_NameTextBox.Name = "patient_Full_NameTextBox";
             this.patient_Full_NameTextBox.Size = new System.Drawing.Size(100, 20);
             this.patient_Full_NameTextBox.TabIndex = 10;
             // 
-            // patient_IDLabel
-            // 
-            patient_IDLabel.AutoSize = true;
-            patient_IDLabel.Location = new System.Drawing.Point(53, 183);
-            patient_IDLabel.Name = "patient_IDLabel";
-            patient_IDLabel.Size = new System.Drawing.Size(57, 13);
-            patient_IDLabel.TabIndex = 11;
-            patient_IDLabel.Text = "Patient ID:";
-            // 
             // patient_IDTextBox
             // 
             this.patient_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gP_AppointmentBindingSource, "Patient ID", true));
-            this.patient_IDTextBox.Location = new System.Drawing.Point(171, 180);
+            this.patient_IDTextBox.Location = new System.Drawing.Point(435, 277);
             this.patient_IDTextBox.Name = "patient_IDTextBox";
             this.patient_IDTextBox.Size = new System.Drawing.Size(100, 20);
             this.patient_IDTextBox.TabIndex = 12;
             // 
-            // medical_Centre_NameLabel
-            // 
-            medical_Centre_NameLabel.AutoSize = true;
-            medical_Centre_NameLabel.Location = new System.Drawing.Point(53, 209);
-            medical_Centre_NameLabel.Name = "medical_Centre_NameLabel";
-            medical_Centre_NameLabel.Size = new System.Drawing.Size(112, 13);
-            medical_Centre_NameLabel.TabIndex = 13;
-            medical_Centre_NameLabel.Text = "Medical Centre Name:";
-            // 
             // medical_Centre_NameTextBox
             // 
             this.medical_Centre_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gP_AppointmentBindingSource, "Medical Centre Name", true));
-            this.medical_Centre_NameTextBox.Location = new System.Drawing.Point(171, 206);
+            this.medical_Centre_NameTextBox.Location = new System.Drawing.Point(435, 303);
             this.medical_Centre_NameTextBox.Name = "medical_Centre_NameTextBox";
             this.medical_Centre_NameTextBox.Size = new System.Drawing.Size(100, 20);
             this.medical_Centre_NameTextBox.TabIndex = 14;
             // 
-            // doctor_s_NHS_NoLabel
-            // 
-            doctor_s_NHS_NoLabel.AutoSize = true;
-            doctor_s_NHS_NoLabel.Location = new System.Drawing.Point(53, 235);
-            doctor_s_NHS_NoLabel.Name = "doctor_s_NHS_NoLabel";
-            doctor_s_NHS_NoLabel.Size = new System.Drawing.Size(92, 13);
-            doctor_s_NHS_NoLabel.TabIndex = 15;
-            doctor_s_NHS_NoLabel.Text = "Doctor\'s NHS No:";
-            // 
             // doctor_s_NHS_NoTextBox
             // 
             this.doctor_s_NHS_NoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gP_AppointmentBindingSource, "Doctor\'s NHS No", true));
-            this.doctor_s_NHS_NoTextBox.Location = new System.Drawing.Point(171, 232);
+            this.doctor_s_NHS_NoTextBox.Location = new System.Drawing.Point(435, 329);
             this.doctor_s_NHS_NoTextBox.Name = "doctor_s_NHS_NoTextBox";
             this.doctor_s_NHS_NoTextBox.Size = new System.Drawing.Size(100, 20);
             this.doctor_s_NHS_NoTextBox.TabIndex = 16;
