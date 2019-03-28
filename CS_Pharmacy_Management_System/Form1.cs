@@ -17,33 +17,33 @@ namespace CS_Pharmacy_Management_System
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDoctor_click(object sender, EventArgs e)
         {
             Form2 Doctor = new Form2();
             Doctor.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnGP_click(object sender, EventArgs e)
         {
             Form3 GP = new Form3();
             GP.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnPatient_click(object sender, EventArgs e)
         {
             Form4 Patient = new Form4();
             Patient.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnPayment_click(object sender, EventArgs e)
         {
             Form5 Payment = new Form5();
             Payment.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnPharmacy_click(object sender, EventArgs e)
         {
-            Form6 Pharmacy  = new Form6();
+            Form6 Pharmacy = new Form6();
             Pharmacy.Show();
         }
 
@@ -53,26 +53,52 @@ namespace CS_Pharmacy_Management_System
             Pharmacy_Office.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void btnExit_click(object sender, EventArgs e)
         {
             DialogResult iExit;
 
-            iExit = MessageBox.Show("Confirm if you want to Exit", "Pharmacy Management System", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            iExit = MessageBox.Show("Confirm if you want to exit", "Pharmacy Management System",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-            if(iExit == DialogResult.Yes)
+            if (iExit == DialogResult.Yes)
             {
                 Application.Exit();
             }
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void btnClear(object sender, EventArgs e)
         {
-            if(txtUsername.Text == "q1" && txtPassword.Text == "sq1")
+
+        }
+
+        private void btnLogin(object sender, EventArgs e)
+        {
+            if (txtUsername.Text == "q1" && txtPassword.Text == "sq1")
             {
+                btnGP.Enabled = true;
+                btnPatient.Enabled = true;
+                btnDoctor.Enabled = true;
+                btnPatient.Enabled = true;
+                btnPayment.Enabled = true;
+                btnPharmacy.Enabled = true;
                 btnPharmacy_Office.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Please enter the correct Username or Password", "Pharmacy Management System");
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            btnGP.Enabled = false;
+            btnPatient.Enabled = false;
+            btnDoctor.Enabled = false;
+            btnPatient.Enabled = false;
+            btnPayment.Enabled = false;
+            btnPharmacy.Enabled = false;
+            btnPharmacy_Office.Enabled = false;
+        }
 
     }
 }

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnDoctor = new System.Windows.Forms.Button();
+            this.btnGP = new System.Windows.Forms.Button();
+            this.btnPatient = new System.Windows.Forms.Button();
+            this.btnPayment = new System.Windows.Forms.Button();
+            this.btnPharmacy = new System.Windows.Forms.Button();
             this.btnPharmacy_Office = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -45,60 +45,60 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnDoctor
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(129, 183);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 35);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Doctor";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnDoctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoctor.Location = new System.Drawing.Point(129, 183);
+            this.btnDoctor.Name = "btnDoctor";
+            this.btnDoctor.Size = new System.Drawing.Size(142, 35);
+            this.btnDoctor.TabIndex = 0;
+            this.btnDoctor.Text = "Doctor";
+            this.btnDoctor.UseVisualStyleBackColor = true;
+            this.btnDoctor.Click += new System.EventHandler(this.btnDoctor_click);
             // 
-            // button2
+            // btnGP
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(129, 224);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 35);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "GP Appointment";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnGP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGP.Location = new System.Drawing.Point(129, 224);
+            this.btnGP.Name = "btnGP";
+            this.btnGP.Size = new System.Drawing.Size(142, 35);
+            this.btnGP.TabIndex = 0;
+            this.btnGP.Text = "GP Appointment";
+            this.btnGP.UseVisualStyleBackColor = true;
+            this.btnGP.Click += new System.EventHandler(this.btnGP_click);
             // 
-            // button3
+            // btnPatient
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(129, 265);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 35);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Patients";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPatient.Location = new System.Drawing.Point(129, 265);
+            this.btnPatient.Name = "btnPatient";
+            this.btnPatient.Size = new System.Drawing.Size(142, 35);
+            this.btnPatient.TabIndex = 0;
+            this.btnPatient.Text = "Patients";
+            this.btnPatient.UseVisualStyleBackColor = true;
+            this.btnPatient.Click += new System.EventHandler(this.btnPatient_click);
             // 
-            // button4
+            // btnPayment
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(129, 306);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(142, 35);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Payments";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnPayment.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayment.Location = new System.Drawing.Point(129, 306);
+            this.btnPayment.Name = "btnPayment";
+            this.btnPayment.Size = new System.Drawing.Size(142, 35);
+            this.btnPayment.TabIndex = 0;
+            this.btnPayment.Text = "Payments";
+            this.btnPayment.UseVisualStyleBackColor = true;
+            this.btnPayment.Click += new System.EventHandler(this.btnPayment_click);
             // 
-            // button5
+            // btnPharmacy
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(129, 347);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(142, 35);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Pharmacy";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnPharmacy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPharmacy.Location = new System.Drawing.Point(129, 347);
+            this.btnPharmacy.Name = "btnPharmacy";
+            this.btnPharmacy.Size = new System.Drawing.Size(142, 35);
+            this.btnPharmacy.TabIndex = 0;
+            this.btnPharmacy.Text = "Pharmacy";
+            this.btnPharmacy.UseVisualStyleBackColor = true;
+            this.btnPharmacy.Click += new System.EventHandler(this.btnPharmacy_click);
             // 
             // btnPharmacy_Office
             // 
@@ -111,16 +111,16 @@
             this.btnPharmacy_Office.UseVisualStyleBackColor = true;
             this.btnPharmacy_Office.Click += new System.EventHandler(this.btnPharmacy_Office_Click);
             // 
-            // button7
+            // btnExit
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(129, 429);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(142, 35);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Exit";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(129, 429);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(142, 35);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_click);
             // 
             // panel1
             // 
@@ -145,7 +145,7 @@
             this.button9.TabIndex = 2;
             this.button9.Text = "Clear";
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.Click += new System.EventHandler(this.btnClear);
             // 
             // button8
             // 
@@ -156,6 +156,7 @@
             this.button8.TabIndex = 2;
             this.button8.Text = "Login";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.btnLogin);
             // 
             // label2
             // 
@@ -180,6 +181,7 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(248, 83);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
@@ -189,6 +191,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(248, 33);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
@@ -201,15 +204,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1370, 729);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnPharmacy_Office);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPharmacy);
+            this.Controls.Add(this.btnPayment);
+            this.Controls.Add(this.btnPatient);
+            this.Controls.Add(this.btnGP);
+            this.Controls.Add(this.btnDoctor);
             this.Name = "Form1";
             this.Text = "Management";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -218,13 +222,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnDoctor;
+        private System.Windows.Forms.Button btnGP;
+        private System.Windows.Forms.Button btnPatient;
+        private System.Windows.Forms.Button btnPayment;
+        private System.Windows.Forms.Button btnPharmacy;
         private System.Windows.Forms.Button btnPharmacy_Office;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button9;
