@@ -54,7 +54,7 @@ namespace CS_Pharmacy_Management_System
 
             if (iExit == DialogResult.Yes)
             {
-          
+                this.Hide();
             }
         }
 

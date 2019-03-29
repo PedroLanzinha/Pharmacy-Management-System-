@@ -31,12 +31,24 @@ namespace CS_Pharmacy_Management_System
             this.patientTableAdapter.Fill(this.pharmacyDataSet.Patient);
 
         }
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult iExit;
+
+            iExit = MessageBox.Show("Confirm if you want to exit Patients Reports", "Pharmacy Management System",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (iExit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
 
         private void btnCloseClick(object sender, EventArgs e)
         {
             DialogResult iExit;
 
-            iExit = MessageBox.Show("Confirm if you want to exit doctor's report", "Pharmacy Management System",
+            iExit = MessageBox.Show("Confirm if you want to exit Pharmacy Office", "Pharmacy Management System",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (iExit == DialogResult.Yes)

@@ -89,6 +89,25 @@
             this.btnNext = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.patientDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             nI_NumberLabel = new System.Windows.Forms.Label();
             firstnameLabel = new System.Windows.Forms.Label();
             surnameLabel = new System.Windows.Forms.Label();
@@ -111,13 +130,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.patientBindingNavigator)).BeginInit();
             this.patientBindingNavigator.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.patientDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // nI_NumberLabel
             // 
             nI_NumberLabel.AutoSize = true;
             nI_NumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nI_NumberLabel.Location = new System.Drawing.Point(22, 39);
+            nI_NumberLabel.Location = new System.Drawing.Point(24, 65);
             nI_NumberLabel.Name = "nI_NumberLabel";
             nI_NumberLabel.Size = new System.Drawing.Size(89, 20);
             nI_NumberLabel.TabIndex = 1;
@@ -127,7 +148,7 @@
             // 
             firstnameLabel.AutoSize = true;
             firstnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            firstnameLabel.Location = new System.Drawing.Point(22, 65);
+            firstnameLabel.Location = new System.Drawing.Point(24, 91);
             firstnameLabel.Name = "firstnameLabel";
             firstnameLabel.Size = new System.Drawing.Size(84, 20);
             firstnameLabel.TabIndex = 3;
@@ -137,7 +158,7 @@
             // 
             surnameLabel.AutoSize = true;
             surnameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            surnameLabel.Location = new System.Drawing.Point(22, 91);
+            surnameLabel.Location = new System.Drawing.Point(24, 117);
             surnameLabel.Name = "surnameLabel";
             surnameLabel.Size = new System.Drawing.Size(78, 20);
             surnameLabel.TabIndex = 5;
@@ -147,7 +168,7 @@
             // 
             date_of_BirthLabel.AutoSize = true;
             date_of_BirthLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            date_of_BirthLabel.Location = new System.Drawing.Point(22, 117);
+            date_of_BirthLabel.Location = new System.Drawing.Point(24, 143);
             date_of_BirthLabel.Name = "date_of_BirthLabel";
             date_of_BirthLabel.Size = new System.Drawing.Size(103, 20);
             date_of_BirthLabel.TabIndex = 7;
@@ -157,7 +178,7 @@
             // 
             billing_NameLabel.AutoSize = true;
             billing_NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            billing_NameLabel.Location = new System.Drawing.Point(22, 143);
+            billing_NameLabel.Location = new System.Drawing.Point(24, 169);
             billing_NameLabel.Name = "billing_NameLabel";
             billing_NameLabel.Size = new System.Drawing.Size(100, 20);
             billing_NameLabel.TabIndex = 9;
@@ -167,7 +188,7 @@
             // 
             addressLabel.AutoSize = true;
             addressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            addressLabel.Location = new System.Drawing.Point(305, 39);
+            addressLabel.Location = new System.Drawing.Point(24, 212);
             addressLabel.Name = "addressLabel";
             addressLabel.Size = new System.Drawing.Size(72, 20);
             addressLabel.TabIndex = 11;
@@ -177,7 +198,7 @@
             // 
             post_CodeLabel.AutoSize = true;
             post_CodeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            post_CodeLabel.Location = new System.Drawing.Point(305, 65);
+            post_CodeLabel.Location = new System.Drawing.Point(24, 260);
             post_CodeLabel.Name = "post_CodeLabel";
             post_CodeLabel.Size = new System.Drawing.Size(87, 20);
             post_CodeLabel.TabIndex = 13;
@@ -187,7 +208,7 @@
             // 
             cityLabel.AutoSize = true;
             cityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cityLabel.Location = new System.Drawing.Point(305, 91);
+            cityLabel.Location = new System.Drawing.Point(24, 286);
             cityLabel.Name = "cityLabel";
             cityLabel.Size = new System.Drawing.Size(39, 20);
             cityLabel.TabIndex = 15;
@@ -197,7 +218,7 @@
             // 
             countryLabel.AutoSize = true;
             countryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            countryLabel.Location = new System.Drawing.Point(305, 117);
+            countryLabel.Location = new System.Drawing.Point(24, 312);
             countryLabel.Name = "countryLabel";
             countryLabel.Size = new System.Drawing.Size(68, 20);
             countryLabel.TabIndex = 17;
@@ -207,7 +228,7 @@
             // 
             home_PhoneLabel.AutoSize = true;
             home_PhoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            home_PhoneLabel.Location = new System.Drawing.Point(305, 143);
+            home_PhoneLabel.Location = new System.Drawing.Point(24, 338);
             home_PhoneLabel.Name = "home_PhoneLabel";
             home_PhoneLabel.Size = new System.Drawing.Size(106, 20);
             home_PhoneLabel.TabIndex = 19;
@@ -217,7 +238,7 @@
             // 
             mobile_PhoneLabel.AutoSize = true;
             mobile_PhoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            mobile_PhoneLabel.Location = new System.Drawing.Point(305, 169);
+            mobile_PhoneLabel.Location = new System.Drawing.Point(24, 364);
             mobile_PhoneLabel.Name = "mobile_PhoneLabel";
             mobile_PhoneLabel.Size = new System.Drawing.Size(109, 20);
             mobile_PhoneLabel.TabIndex = 21;
@@ -227,7 +248,7 @@
             // 
             fax_PhoneLabel.AutoSize = true;
             fax_PhoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            fax_PhoneLabel.Location = new System.Drawing.Point(601, 39);
+            fax_PhoneLabel.Location = new System.Drawing.Point(354, 65);
             fax_PhoneLabel.Name = "fax_PhoneLabel";
             fax_PhoneLabel.Size = new System.Drawing.Size(89, 20);
             fax_PhoneLabel.TabIndex = 23;
@@ -237,7 +258,7 @@
             // 
             menoLabel.AutoSize = true;
             menoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            menoLabel.Location = new System.Drawing.Point(601, 65);
+            menoLabel.Location = new System.Drawing.Point(354, 91);
             menoLabel.Name = "menoLabel";
             menoLabel.Size = new System.Drawing.Size(53, 20);
             menoLabel.TabIndex = 25;
@@ -247,7 +268,7 @@
             // 
             patient__IDLabel.AutoSize = true;
             patient__IDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            patient__IDLabel.Location = new System.Drawing.Point(601, 91);
+            patient__IDLabel.Location = new System.Drawing.Point(354, 117);
             patient__IDLabel.Name = "patient__IDLabel";
             patient__IDLabel.Size = new System.Drawing.Size(88, 20);
             patient__IDLabel.TabIndex = 27;
@@ -257,7 +278,7 @@
             // 
             patient_NHS_NumberLabel.AutoSize = true;
             patient_NHS_NumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            patient_NHS_NumberLabel.Location = new System.Drawing.Point(601, 117);
+            patient_NHS_NumberLabel.Location = new System.Drawing.Point(681, 65);
             patient_NHS_NumberLabel.Name = "patient_NHS_NumberLabel";
             patient_NHS_NumberLabel.Size = new System.Drawing.Size(161, 20);
             patient_NHS_NumberLabel.TabIndex = 29;
@@ -267,7 +288,7 @@
             // 
             eMIS_NumberLabel.AutoSize = true;
             eMIS_NumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            eMIS_NumberLabel.Location = new System.Drawing.Point(601, 143);
+            eMIS_NumberLabel.Location = new System.Drawing.Point(681, 91);
             eMIS_NumberLabel.Name = "eMIS_NumberLabel";
             eMIS_NumberLabel.Size = new System.Drawing.Size(113, 20);
             eMIS_NumberLabel.TabIndex = 31;
@@ -277,7 +298,7 @@
             // 
             gP_Appointment_RefLabel.AutoSize = true;
             gP_Appointment_RefLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            gP_Appointment_RefLabel.Location = new System.Drawing.Point(601, 169);
+            gP_Appointment_RefLabel.Location = new System.Drawing.Point(681, 117);
             gP_Appointment_RefLabel.Name = "gP_Appointment_RefLabel";
             gP_Appointment_RefLabel.Size = new System.Drawing.Size(161, 20);
             gP_Appointment_RefLabel.TabIndex = 33;
@@ -333,7 +354,7 @@
             this.patientBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.patientBindingNavigator.Name = "patientBindingNavigator";
             this.patientBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.patientBindingNavigator.Size = new System.Drawing.Size(884, 25);
+            this.patientBindingNavigator.Size = new System.Drawing.Size(1023, 25);
             this.patientBindingNavigator.TabIndex = 0;
             this.patientBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -434,7 +455,7 @@
             // nI_NumberTextBox
             // 
             this.nI_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "NI Number", true));
-            this.nI_NumberTextBox.Location = new System.Drawing.Point(185, 41);
+            this.nI_NumberTextBox.Location = new System.Drawing.Point(187, 67);
             this.nI_NumberTextBox.Name = "nI_NumberTextBox";
             this.nI_NumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.nI_NumberTextBox.TabIndex = 2;
@@ -442,7 +463,7 @@
             // firstnameTextBox
             // 
             this.firstnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Firstname", true));
-            this.firstnameTextBox.Location = new System.Drawing.Point(185, 67);
+            this.firstnameTextBox.Location = new System.Drawing.Point(187, 93);
             this.firstnameTextBox.Name = "firstnameTextBox";
             this.firstnameTextBox.Size = new System.Drawing.Size(100, 20);
             this.firstnameTextBox.TabIndex = 4;
@@ -450,7 +471,7 @@
             // surnameTextBox
             // 
             this.surnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Surname", true));
-            this.surnameTextBox.Location = new System.Drawing.Point(185, 93);
+            this.surnameTextBox.Location = new System.Drawing.Point(187, 119);
             this.surnameTextBox.Name = "surnameTextBox";
             this.surnameTextBox.Size = new System.Drawing.Size(100, 20);
             this.surnameTextBox.TabIndex = 6;
@@ -458,7 +479,7 @@
             // date_of_BirthTextBox
             // 
             this.date_of_BirthTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Date of Birth", true));
-            this.date_of_BirthTextBox.Location = new System.Drawing.Point(185, 119);
+            this.date_of_BirthTextBox.Location = new System.Drawing.Point(187, 145);
             this.date_of_BirthTextBox.Name = "date_of_BirthTextBox";
             this.date_of_BirthTextBox.Size = new System.Drawing.Size(100, 20);
             this.date_of_BirthTextBox.TabIndex = 8;
@@ -466,7 +487,7 @@
             // billing_NameTextBox
             // 
             this.billing_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Billing Name", true));
-            this.billing_NameTextBox.Location = new System.Drawing.Point(185, 145);
+            this.billing_NameTextBox.Location = new System.Drawing.Point(187, 171);
             this.billing_NameTextBox.Name = "billing_NameTextBox";
             this.billing_NameTextBox.Size = new System.Drawing.Size(100, 20);
             this.billing_NameTextBox.TabIndex = 10;
@@ -474,15 +495,16 @@
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(468, 41);
+            this.addressTextBox.Location = new System.Drawing.Point(187, 199);
+            this.addressTextBox.Multiline = true;
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(100, 20);
+            this.addressTextBox.Size = new System.Drawing.Size(100, 52);
             this.addressTextBox.TabIndex = 12;
             // 
             // post_CodeTextBox
             // 
             this.post_CodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Post Code", true));
-            this.post_CodeTextBox.Location = new System.Drawing.Point(468, 67);
+            this.post_CodeTextBox.Location = new System.Drawing.Point(187, 262);
             this.post_CodeTextBox.Name = "post_CodeTextBox";
             this.post_CodeTextBox.Size = new System.Drawing.Size(100, 20);
             this.post_CodeTextBox.TabIndex = 14;
@@ -490,7 +512,7 @@
             // cityTextBox
             // 
             this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "City", true));
-            this.cityTextBox.Location = new System.Drawing.Point(468, 93);
+            this.cityTextBox.Location = new System.Drawing.Point(187, 288);
             this.cityTextBox.Name = "cityTextBox";
             this.cityTextBox.Size = new System.Drawing.Size(100, 20);
             this.cityTextBox.TabIndex = 16;
@@ -498,7 +520,7 @@
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(468, 119);
+            this.countryTextBox.Location = new System.Drawing.Point(187, 314);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(100, 20);
             this.countryTextBox.TabIndex = 18;
@@ -506,7 +528,7 @@
             // home_PhoneTextBox
             // 
             this.home_PhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Home Phone", true));
-            this.home_PhoneTextBox.Location = new System.Drawing.Point(468, 145);
+            this.home_PhoneTextBox.Location = new System.Drawing.Point(187, 340);
             this.home_PhoneTextBox.Name = "home_PhoneTextBox";
             this.home_PhoneTextBox.Size = new System.Drawing.Size(100, 20);
             this.home_PhoneTextBox.TabIndex = 20;
@@ -514,7 +536,7 @@
             // mobile_PhoneTextBox
             // 
             this.mobile_PhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Mobile Phone", true));
-            this.mobile_PhoneTextBox.Location = new System.Drawing.Point(468, 171);
+            this.mobile_PhoneTextBox.Location = new System.Drawing.Point(187, 366);
             this.mobile_PhoneTextBox.Name = "mobile_PhoneTextBox";
             this.mobile_PhoneTextBox.Size = new System.Drawing.Size(100, 20);
             this.mobile_PhoneTextBox.TabIndex = 22;
@@ -522,7 +544,7 @@
             // fax_PhoneTextBox
             // 
             this.fax_PhoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Fax Phone", true));
-            this.fax_PhoneTextBox.Location = new System.Drawing.Point(764, 41);
+            this.fax_PhoneTextBox.Location = new System.Drawing.Point(517, 67);
             this.fax_PhoneTextBox.Name = "fax_PhoneTextBox";
             this.fax_PhoneTextBox.Size = new System.Drawing.Size(100, 20);
             this.fax_PhoneTextBox.TabIndex = 24;
@@ -530,7 +552,7 @@
             // menoTextBox
             // 
             this.menoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Meno", true));
-            this.menoTextBox.Location = new System.Drawing.Point(764, 67);
+            this.menoTextBox.Location = new System.Drawing.Point(517, 93);
             this.menoTextBox.Name = "menoTextBox";
             this.menoTextBox.Size = new System.Drawing.Size(100, 20);
             this.menoTextBox.TabIndex = 26;
@@ -538,7 +560,7 @@
             // patient__IDTextBox
             // 
             this.patient__IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Patient  ID", true));
-            this.patient__IDTextBox.Location = new System.Drawing.Point(764, 93);
+            this.patient__IDTextBox.Location = new System.Drawing.Point(517, 119);
             this.patient__IDTextBox.Name = "patient__IDTextBox";
             this.patient__IDTextBox.Size = new System.Drawing.Size(100, 20);
             this.patient__IDTextBox.TabIndex = 28;
@@ -546,7 +568,7 @@
             // patient_NHS_NumberTextBox
             // 
             this.patient_NHS_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "Patient NHS Number", true));
-            this.patient_NHS_NumberTextBox.Location = new System.Drawing.Point(764, 119);
+            this.patient_NHS_NumberTextBox.Location = new System.Drawing.Point(844, 67);
             this.patient_NHS_NumberTextBox.Name = "patient_NHS_NumberTextBox";
             this.patient_NHS_NumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.patient_NHS_NumberTextBox.TabIndex = 30;
@@ -554,7 +576,7 @@
             // eMIS_NumberTextBox
             // 
             this.eMIS_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "EMIS Number", true));
-            this.eMIS_NumberTextBox.Location = new System.Drawing.Point(764, 145);
+            this.eMIS_NumberTextBox.Location = new System.Drawing.Point(844, 93);
             this.eMIS_NumberTextBox.Name = "eMIS_NumberTextBox";
             this.eMIS_NumberTextBox.Size = new System.Drawing.Size(100, 20);
             this.eMIS_NumberTextBox.TabIndex = 32;
@@ -562,7 +584,7 @@
             // gP_Appointment_RefTextBox
             // 
             this.gP_Appointment_RefTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.patientBindingSource, "GP Appointment Ref", true));
-            this.gP_Appointment_RefTextBox.Location = new System.Drawing.Point(764, 171);
+            this.gP_Appointment_RefTextBox.Location = new System.Drawing.Point(844, 119);
             this.gP_Appointment_RefTextBox.Name = "gP_Appointment_RefTextBox";
             this.gP_Appointment_RefTextBox.Size = new System.Drawing.Size(100, 20);
             this.gP_Appointment_RefTextBox.TabIndex = 34;
@@ -577,86 +599,233 @@
             this.panel2.Controls.Add(this.btnNext);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Location = new System.Drawing.Point(202, 237);
+            this.panel2.Location = new System.Drawing.Point(334, 171);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(662, 82);
+            this.panel2.Size = new System.Drawing.Size(660, 61);
             this.panel2.TabIndex = 36;
             // 
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(563, 21);
+            this.btnExit.Location = new System.Drawing.Point(559, 14);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(86, 40);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(471, 21);
+            this.btnClose.Location = new System.Drawing.Point(467, 14);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(86, 40);
             this.btnClose.TabIndex = 0;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnCloseClick);
             // 
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(379, 21);
+            this.btnSave.Location = new System.Drawing.Point(375, 14);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(86, 40);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnPrevious
             // 
             this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevious.Location = new System.Drawing.Point(287, 21);
+            this.btnPrevious.Location = new System.Drawing.Point(283, 14);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(86, 40);
             this.btnPrevious.TabIndex = 0;
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnNext
             // 
             this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(195, 21);
+            this.btnNext.Location = new System.Drawing.Point(191, 14);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(86, 40);
             this.btnNext.TabIndex = 0;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(103, 21);
+            this.btnDelete.Location = new System.Drawing.Point(99, 14);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(86, 40);
             this.btnDelete.TabIndex = 0;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(11, 21);
+            this.btnAdd.Location = new System.Drawing.Point(7, 14);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(86, 40);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.patientDataGridView);
+            this.panel1.Location = new System.Drawing.Point(334, 262);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(677, 250);
+            this.panel1.TabIndex = 37;
+            // 
+            // patientDataGridView
+            // 
+            this.patientDataGridView.AutoGenerateColumns = false;
+            this.patientDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.patientDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16,
+            this.dataGridViewTextBoxColumn17});
+            this.patientDataGridView.DataSource = this.patientBindingSource;
+            this.patientDataGridView.Location = new System.Drawing.Point(11, 13);
+            this.patientDataGridView.Name = "patientDataGridView";
+            this.patientDataGridView.Size = new System.Drawing.Size(647, 220);
+            this.patientDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NI Number";
+            this.dataGridViewTextBoxColumn1.HeaderText = "NI Number";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Firstname";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Firstname";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Surname";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Surname";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Date of Birth";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Date of Birth";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Billing Name";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Billing Name";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Post Code";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Post Code";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "City";
+            this.dataGridViewTextBoxColumn8.HeaderText = "City";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Country";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Country";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Home Phone";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Home Phone";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Mobile Phone";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Mobile Phone";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Fax Phone";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Fax Phone";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Meno";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Meno";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "Patient  ID";
+            this.dataGridViewTextBoxColumn14.HeaderText = "Patient  ID";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Patient NHS Number";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Patient NHS Number";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "EMIS Number";
+            this.dataGridViewTextBoxColumn16.HeaderText = "EMIS Number";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "GP Appointment Ref";
+            this.dataGridViewTextBoxColumn17.HeaderText = "GP Appointment Ref";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 545);
+            this.ClientSize = new System.Drawing.Size(1023, 552);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(nI_NumberLabel);
             this.Controls.Add(this.nI_NumberTextBox);
@@ -702,6 +871,8 @@
             this.patientBindingNavigator.ResumeLayout(false);
             this.patientBindingNavigator.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.patientDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -751,5 +922,24 @@
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView patientDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
     }
 }

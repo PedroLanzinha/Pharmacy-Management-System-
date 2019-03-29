@@ -79,6 +79,32 @@
             this.how_to_Use_MedicationTextBox = new System.Windows.Forms.TextBox();
             this.patient__IDTextBox = new System.Windows.Forms.TextBox();
             this.doctor_s_NHS_NoTextBox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pharmacyDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             reference_NumberLabel = new System.Windows.Forms.Label();
             name_of_TabletsLabel = new System.Windows.Forms.Label();
             dose__mg_Label = new System.Windows.Forms.Label();
@@ -99,149 +125,168 @@
             ((System.ComponentModel.ISupportInitialize)(this.pharmacyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pharmacyBindingNavigator)).BeginInit();
             this.pharmacyBindingNavigator.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pharmacyDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // reference_NumberLabel
             // 
             reference_NumberLabel.AutoSize = true;
-            reference_NumberLabel.Location = new System.Drawing.Point(296, 54);
+            reference_NumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            reference_NumberLabel.Location = new System.Drawing.Point(23, 40);
             reference_NumberLabel.Name = "reference_NumberLabel";
-            reference_NumberLabel.Size = new System.Drawing.Size(100, 13);
+            reference_NumberLabel.Size = new System.Drawing.Size(148, 20);
             reference_NumberLabel.TabIndex = 1;
             reference_NumberLabel.Text = "Reference Number:";
             // 
             // name_of_TabletsLabel
             // 
             name_of_TabletsLabel.AutoSize = true;
-            name_of_TabletsLabel.Location = new System.Drawing.Point(296, 80);
+            name_of_TabletsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            name_of_TabletsLabel.Location = new System.Drawing.Point(23, 72);
             name_of_TabletsLabel.Name = "name_of_TabletsLabel";
-            name_of_TabletsLabel.Size = new System.Drawing.Size(88, 13);
+            name_of_TabletsLabel.Size = new System.Drawing.Size(129, 20);
             name_of_TabletsLabel.TabIndex = 3;
             name_of_TabletsLabel.Text = "Name of Tablets:";
             // 
             // dose__mg_Label
             // 
             dose__mg_Label.AutoSize = true;
-            dose__mg_Label.Location = new System.Drawing.Point(296, 106);
+            dose__mg_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dose__mg_Label.Location = new System.Drawing.Point(23, 104);
             dose__mg_Label.Name = "dose__mg_Label";
-            dose__mg_Label.Size = new System.Drawing.Size(58, 13);
+            dose__mg_Label.Size = new System.Drawing.Size(87, 20);
             dose__mg_Label.TabIndex = 5;
             dose__mg_Label.Text = "Dose (mg):";
             // 
             // number_of_TabletsLabel
             // 
             number_of_TabletsLabel.AutoSize = true;
-            number_of_TabletsLabel.Location = new System.Drawing.Point(296, 132);
+            number_of_TabletsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            number_of_TabletsLabel.Location = new System.Drawing.Point(23, 136);
             number_of_TabletsLabel.Name = "number_of_TabletsLabel";
-            number_of_TabletsLabel.Size = new System.Drawing.Size(97, 13);
+            number_of_TabletsLabel.Size = new System.Drawing.Size(143, 20);
             number_of_TabletsLabel.TabIndex = 7;
             number_of_TabletsLabel.Text = "Number of Tablets:";
             // 
             // lOTLabel
             // 
             lOTLabel.AutoSize = true;
-            lOTLabel.Location = new System.Drawing.Point(296, 158);
+            lOTLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lOTLabel.Location = new System.Drawing.Point(23, 168);
             lOTLabel.Name = "lOTLabel";
-            lOTLabel.Size = new System.Drawing.Size(31, 13);
+            lOTLabel.Size = new System.Drawing.Size(43, 20);
             lOTLabel.TabIndex = 9;
             lOTLabel.Text = "LOT:";
             // 
             // issued_DateLabel
             // 
             issued_DateLabel.AutoSize = true;
-            issued_DateLabel.Location = new System.Drawing.Point(296, 184);
+            issued_DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            issued_DateLabel.Location = new System.Drawing.Point(23, 200);
             issued_DateLabel.Name = "issued_DateLabel";
-            issued_DateLabel.Size = new System.Drawing.Size(67, 13);
+            issued_DateLabel.Size = new System.Drawing.Size(100, 20);
             issued_DateLabel.TabIndex = 11;
             issued_DateLabel.Text = "Issued Date:";
             // 
             // exp_DateLabel
             // 
             exp_DateLabel.AutoSize = true;
-            exp_DateLabel.Location = new System.Drawing.Point(296, 210);
+            exp_DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            exp_DateLabel.Location = new System.Drawing.Point(382, 40);
             exp_DateLabel.Name = "exp_DateLabel";
-            exp_DateLabel.Size = new System.Drawing.Size(54, 13);
+            exp_DateLabel.Size = new System.Drawing.Size(79, 20);
             exp_DateLabel.TabIndex = 13;
             exp_DateLabel.Text = "Exp Date:";
             // 
             // daily_DoseLabel
             // 
             daily_DoseLabel.AutoSize = true;
-            daily_DoseLabel.Location = new System.Drawing.Point(296, 236);
+            daily_DoseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            daily_DoseLabel.Location = new System.Drawing.Point(382, 72);
             daily_DoseLabel.Name = "daily_DoseLabel";
-            daily_DoseLabel.Size = new System.Drawing.Size(61, 13);
+            daily_DoseLabel.Size = new System.Drawing.Size(89, 20);
             daily_DoseLabel.TabIndex = 15;
             daily_DoseLabel.Text = "Daily Dose:";
             // 
             // possible_Side_EffectsLabel
             // 
             possible_Side_EffectsLabel.AutoSize = true;
-            possible_Side_EffectsLabel.Location = new System.Drawing.Point(296, 262);
+            possible_Side_EffectsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            possible_Side_EffectsLabel.Location = new System.Drawing.Point(382, 104);
             possible_Side_EffectsLabel.Name = "possible_Side_EffectsLabel";
-            possible_Side_EffectsLabel.Size = new System.Drawing.Size(109, 13);
+            possible_Side_EffectsLabel.Size = new System.Drawing.Size(163, 20);
             possible_Side_EffectsLabel.TabIndex = 17;
             possible_Side_EffectsLabel.Text = "Possible Side Effects:";
             // 
             // further_InformationLabel
             // 
             further_InformationLabel.AutoSize = true;
-            further_InformationLabel.Location = new System.Drawing.Point(296, 288);
+            further_InformationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            further_InformationLabel.Location = new System.Drawing.Point(382, 136);
             further_InformationLabel.Name = "further_InformationLabel";
-            further_InformationLabel.Size = new System.Drawing.Size(98, 13);
+            further_InformationLabel.Size = new System.Drawing.Size(150, 20);
             further_InformationLabel.TabIndex = 19;
             further_InformationLabel.Text = "Further Information:";
             // 
             // storage_AdviceLabel
             // 
             storage_AdviceLabel.AutoSize = true;
-            storage_AdviceLabel.Location = new System.Drawing.Point(296, 314);
+            storage_AdviceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            storage_AdviceLabel.Location = new System.Drawing.Point(382, 168);
             storage_AdviceLabel.Name = "storage_AdviceLabel";
-            storage_AdviceLabel.Size = new System.Drawing.Size(83, 13);
+            storage_AdviceLabel.Size = new System.Drawing.Size(121, 20);
             storage_AdviceLabel.TabIndex = 21;
             storage_AdviceLabel.Text = "Storage Advice:";
             // 
             // administrationLabel
             // 
             administrationLabel.AutoSize = true;
-            administrationLabel.Location = new System.Drawing.Point(296, 340);
+            administrationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            administrationLabel.Location = new System.Drawing.Point(732, 40);
             administrationLabel.Name = "administrationLabel";
-            administrationLabel.Size = new System.Drawing.Size(75, 13);
+            administrationLabel.Size = new System.Drawing.Size(114, 20);
             administrationLabel.TabIndex = 23;
             administrationLabel.Text = "Administration:";
             // 
             // driving_and_Using_MachinesLabel
             // 
             driving_and_Using_MachinesLabel.AutoSize = true;
-            driving_and_Using_MachinesLabel.Location = new System.Drawing.Point(296, 366);
+            driving_and_Using_MachinesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            driving_and_Using_MachinesLabel.Location = new System.Drawing.Point(732, 72);
             driving_and_Using_MachinesLabel.Name = "driving_and_Using_MachinesLabel";
-            driving_and_Using_MachinesLabel.Size = new System.Drawing.Size(143, 13);
+            driving_and_Using_MachinesLabel.Size = new System.Drawing.Size(209, 20);
             driving_and_Using_MachinesLabel.TabIndex = 25;
             driving_and_Using_MachinesLabel.Text = "Driving and Using Machines:";
             // 
             // how_to_Use_MedicationLabel
             // 
             how_to_Use_MedicationLabel.AutoSize = true;
-            how_to_Use_MedicationLabel.Location = new System.Drawing.Point(296, 392);
+            how_to_Use_MedicationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            how_to_Use_MedicationLabel.Location = new System.Drawing.Point(732, 104);
             how_to_Use_MedicationLabel.Name = "how_to_Use_MedicationLabel";
-            how_to_Use_MedicationLabel.Size = new System.Drawing.Size(121, 13);
+            how_to_Use_MedicationLabel.Size = new System.Drawing.Size(177, 20);
             how_to_Use_MedicationLabel.TabIndex = 27;
             how_to_Use_MedicationLabel.Text = "How to Use Medication:";
             // 
             // patient__IDLabel
             // 
             patient__IDLabel.AutoSize = true;
-            patient__IDLabel.Location = new System.Drawing.Point(296, 418);
+            patient__IDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            patient__IDLabel.Location = new System.Drawing.Point(732, 136);
             patient__IDLabel.Name = "patient__IDLabel";
-            patient__IDLabel.Size = new System.Drawing.Size(60, 13);
+            patient__IDLabel.Size = new System.Drawing.Size(88, 20);
             patient__IDLabel.TabIndex = 29;
             patient__IDLabel.Text = "Patient  ID:";
             // 
             // doctor_s_NHS_NoLabel
             // 
             doctor_s_NHS_NoLabel.AutoSize = true;
-            doctor_s_NHS_NoLabel.Location = new System.Drawing.Point(296, 444);
+            doctor_s_NHS_NoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            doctor_s_NHS_NoLabel.Location = new System.Drawing.Point(732, 168);
             doctor_s_NHS_NoLabel.Name = "doctor_s_NHS_NoLabel";
-            doctor_s_NHS_NoLabel.Size = new System.Drawing.Size(92, 13);
+            doctor_s_NHS_NoLabel.Size = new System.Drawing.Size(134, 20);
             doctor_s_NHS_NoLabel.TabIndex = 31;
             doctor_s_NHS_NoLabel.Text = "Doctor\'s NHS No:";
             // 
@@ -295,7 +340,7 @@
             this.pharmacyBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.pharmacyBindingNavigator.Name = "pharmacyBindingNavigator";
             this.pharmacyBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.pharmacyBindingNavigator.Size = new System.Drawing.Size(884, 25);
+            this.pharmacyBindingNavigator.Size = new System.Drawing.Size(1078, 25);
             this.pharmacyBindingNavigator.TabIndex = 0;
             this.pharmacyBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -396,136 +441,380 @@
             // reference_NumberTextBox
             // 
             this.reference_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Reference Number", true));
-            this.reference_NumberTextBox.Location = new System.Drawing.Point(445, 51);
+            this.reference_NumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reference_NumberTextBox.Location = new System.Drawing.Point(237, 37);
             this.reference_NumberTextBox.Name = "reference_NumberTextBox";
-            this.reference_NumberTextBox.Size = new System.Drawing.Size(100, 20);
+            this.reference_NumberTextBox.Size = new System.Drawing.Size(100, 26);
             this.reference_NumberTextBox.TabIndex = 2;
             // 
             // name_of_TabletsTextBox
             // 
             this.name_of_TabletsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Name of Tablets", true));
-            this.name_of_TabletsTextBox.Location = new System.Drawing.Point(445, 77);
+            this.name_of_TabletsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name_of_TabletsTextBox.Location = new System.Drawing.Point(237, 69);
             this.name_of_TabletsTextBox.Name = "name_of_TabletsTextBox";
-            this.name_of_TabletsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.name_of_TabletsTextBox.Size = new System.Drawing.Size(100, 26);
             this.name_of_TabletsTextBox.TabIndex = 4;
             // 
             // dose__mg_TextBox
             // 
             this.dose__mg_TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Dose (mg)", true));
-            this.dose__mg_TextBox.Location = new System.Drawing.Point(445, 103);
+            this.dose__mg_TextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dose__mg_TextBox.Location = new System.Drawing.Point(237, 101);
             this.dose__mg_TextBox.Name = "dose__mg_TextBox";
-            this.dose__mg_TextBox.Size = new System.Drawing.Size(100, 20);
+            this.dose__mg_TextBox.Size = new System.Drawing.Size(100, 26);
             this.dose__mg_TextBox.TabIndex = 6;
             // 
             // number_of_TabletsTextBox
             // 
             this.number_of_TabletsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Number of Tablets", true));
-            this.number_of_TabletsTextBox.Location = new System.Drawing.Point(445, 129);
+            this.number_of_TabletsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.number_of_TabletsTextBox.Location = new System.Drawing.Point(237, 133);
             this.number_of_TabletsTextBox.Name = "number_of_TabletsTextBox";
-            this.number_of_TabletsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.number_of_TabletsTextBox.Size = new System.Drawing.Size(100, 26);
             this.number_of_TabletsTextBox.TabIndex = 8;
             // 
             // lOTTextBox
             // 
             this.lOTTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "LOT", true));
-            this.lOTTextBox.Location = new System.Drawing.Point(445, 155);
+            this.lOTTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lOTTextBox.Location = new System.Drawing.Point(237, 165);
             this.lOTTextBox.Name = "lOTTextBox";
-            this.lOTTextBox.Size = new System.Drawing.Size(100, 20);
+            this.lOTTextBox.Size = new System.Drawing.Size(100, 26);
             this.lOTTextBox.TabIndex = 10;
             // 
             // issued_DateTextBox
             // 
             this.issued_DateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Issued Date", true));
-            this.issued_DateTextBox.Location = new System.Drawing.Point(445, 181);
+            this.issued_DateTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issued_DateTextBox.Location = new System.Drawing.Point(237, 197);
             this.issued_DateTextBox.Name = "issued_DateTextBox";
-            this.issued_DateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.issued_DateTextBox.Size = new System.Drawing.Size(100, 26);
             this.issued_DateTextBox.TabIndex = 12;
             // 
             // exp_DateTextBox
             // 
             this.exp_DateTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Exp Date", true));
-            this.exp_DateTextBox.Location = new System.Drawing.Point(445, 207);
+            this.exp_DateTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exp_DateTextBox.Location = new System.Drawing.Point(596, 37);
             this.exp_DateTextBox.Name = "exp_DateTextBox";
-            this.exp_DateTextBox.Size = new System.Drawing.Size(100, 20);
+            this.exp_DateTextBox.Size = new System.Drawing.Size(100, 26);
             this.exp_DateTextBox.TabIndex = 14;
             // 
             // daily_DoseTextBox
             // 
             this.daily_DoseTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Daily Dose", true));
-            this.daily_DoseTextBox.Location = new System.Drawing.Point(445, 233);
+            this.daily_DoseTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.daily_DoseTextBox.Location = new System.Drawing.Point(596, 69);
             this.daily_DoseTextBox.Name = "daily_DoseTextBox";
-            this.daily_DoseTextBox.Size = new System.Drawing.Size(100, 20);
+            this.daily_DoseTextBox.Size = new System.Drawing.Size(100, 26);
             this.daily_DoseTextBox.TabIndex = 16;
             // 
             // possible_Side_EffectsTextBox
             // 
             this.possible_Side_EffectsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Possible Side Effects", true));
-            this.possible_Side_EffectsTextBox.Location = new System.Drawing.Point(445, 259);
+            this.possible_Side_EffectsTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.possible_Side_EffectsTextBox.Location = new System.Drawing.Point(596, 101);
             this.possible_Side_EffectsTextBox.Name = "possible_Side_EffectsTextBox";
-            this.possible_Side_EffectsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.possible_Side_EffectsTextBox.Size = new System.Drawing.Size(100, 26);
             this.possible_Side_EffectsTextBox.TabIndex = 18;
             // 
             // further_InformationTextBox
             // 
             this.further_InformationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Further Information", true));
-            this.further_InformationTextBox.Location = new System.Drawing.Point(445, 285);
+            this.further_InformationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.further_InformationTextBox.Location = new System.Drawing.Point(596, 133);
             this.further_InformationTextBox.Name = "further_InformationTextBox";
-            this.further_InformationTextBox.Size = new System.Drawing.Size(100, 20);
+            this.further_InformationTextBox.Size = new System.Drawing.Size(100, 26);
             this.further_InformationTextBox.TabIndex = 20;
             // 
             // storage_AdviceTextBox
             // 
             this.storage_AdviceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Storage Advice", true));
-            this.storage_AdviceTextBox.Location = new System.Drawing.Point(445, 311);
+            this.storage_AdviceTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.storage_AdviceTextBox.Location = new System.Drawing.Point(596, 165);
             this.storage_AdviceTextBox.Name = "storage_AdviceTextBox";
-            this.storage_AdviceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.storage_AdviceTextBox.Size = new System.Drawing.Size(100, 26);
             this.storage_AdviceTextBox.TabIndex = 22;
             // 
             // administrationTextBox
             // 
             this.administrationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Administration", true));
-            this.administrationTextBox.Location = new System.Drawing.Point(445, 337);
+            this.administrationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.administrationTextBox.Location = new System.Drawing.Point(946, 37);
             this.administrationTextBox.Name = "administrationTextBox";
-            this.administrationTextBox.Size = new System.Drawing.Size(100, 20);
+            this.administrationTextBox.Size = new System.Drawing.Size(100, 26);
             this.administrationTextBox.TabIndex = 24;
             // 
             // driving_and_Using_MachinesTextBox
             // 
             this.driving_and_Using_MachinesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Driving and Using Machines", true));
-            this.driving_and_Using_MachinesTextBox.Location = new System.Drawing.Point(445, 363);
+            this.driving_and_Using_MachinesTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.driving_and_Using_MachinesTextBox.Location = new System.Drawing.Point(946, 69);
             this.driving_and_Using_MachinesTextBox.Name = "driving_and_Using_MachinesTextBox";
-            this.driving_and_Using_MachinesTextBox.Size = new System.Drawing.Size(100, 20);
+            this.driving_and_Using_MachinesTextBox.Size = new System.Drawing.Size(100, 26);
             this.driving_and_Using_MachinesTextBox.TabIndex = 26;
             // 
             // how_to_Use_MedicationTextBox
             // 
             this.how_to_Use_MedicationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "How to Use Medication", true));
-            this.how_to_Use_MedicationTextBox.Location = new System.Drawing.Point(445, 389);
+            this.how_to_Use_MedicationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.how_to_Use_MedicationTextBox.Location = new System.Drawing.Point(946, 101);
             this.how_to_Use_MedicationTextBox.Name = "how_to_Use_MedicationTextBox";
-            this.how_to_Use_MedicationTextBox.Size = new System.Drawing.Size(100, 20);
+            this.how_to_Use_MedicationTextBox.Size = new System.Drawing.Size(100, 26);
             this.how_to_Use_MedicationTextBox.TabIndex = 28;
             // 
             // patient__IDTextBox
             // 
             this.patient__IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Patient  ID", true));
-            this.patient__IDTextBox.Location = new System.Drawing.Point(445, 415);
+            this.patient__IDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patient__IDTextBox.Location = new System.Drawing.Point(946, 133);
             this.patient__IDTextBox.Name = "patient__IDTextBox";
-            this.patient__IDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.patient__IDTextBox.Size = new System.Drawing.Size(100, 26);
             this.patient__IDTextBox.TabIndex = 30;
             // 
             // doctor_s_NHS_NoTextBox
             // 
             this.doctor_s_NHS_NoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pharmacyBindingSource, "Doctor\'s NHS No", true));
-            this.doctor_s_NHS_NoTextBox.Location = new System.Drawing.Point(445, 441);
+            this.doctor_s_NHS_NoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doctor_s_NHS_NoTextBox.Location = new System.Drawing.Point(946, 165);
             this.doctor_s_NHS_NoTextBox.Name = "doctor_s_NHS_NoTextBox";
-            this.doctor_s_NHS_NoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.doctor_s_NHS_NoTextBox.Size = new System.Drawing.Size(100, 26);
             this.doctor_s_NHS_NoTextBox.TabIndex = 32;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btnExit);
+            this.panel2.Controls.Add(this.btnClose);
+            this.panel2.Controls.Add(this.btnSave);
+            this.panel2.Controls.Add(this.btnPrevious);
+            this.panel2.Controls.Add(this.btnNext);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.btnAdd);
+            this.panel2.Location = new System.Drawing.Point(390, 226);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(649, 50);
+            this.panel2.TabIndex = 35;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(556, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(86, 40);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(464, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(86, 40);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnCloseClick);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(372, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(86, 40);
+            this.btnSave.TabIndex = 0;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.Location = new System.Drawing.Point(280, 3);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(86, 40);
+            this.btnPrevious.TabIndex = 0;
+            this.btnPrevious.Text = "Previous";
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(188, 3);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(86, 40);
+            this.btnNext.TabIndex = 0;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(96, 3);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(86, 40);
+            this.btnDelete.TabIndex = 0;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(4, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(86, 40);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.pharmacyDataGridView);
+            this.panel1.Location = new System.Drawing.Point(22, 300);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1044, 253);
+            this.panel1.TabIndex = 36;
+            // 
+            // pharmacyDataGridView
+            // 
+            this.pharmacyDataGridView.AutoGenerateColumns = false;
+            this.pharmacyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pharmacyDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16});
+            this.pharmacyDataGridView.DataSource = this.pharmacyBindingSource;
+            this.pharmacyDataGridView.Location = new System.Drawing.Point(5, 13);
+            this.pharmacyDataGridView.Name = "pharmacyDataGridView";
+            this.pharmacyDataGridView.Size = new System.Drawing.Size(1030, 231);
+            this.pharmacyDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Reference Number";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Reference Number";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name of Tablets";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name of Tablets";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Dose (mg)";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Dose (mg)";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Number of Tablets";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Number of Tablets";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "LOT";
+            this.dataGridViewTextBoxColumn5.HeaderText = "LOT";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Issued Date";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Issued Date";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Exp Date";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Exp Date";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Daily Dose";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Daily Dose";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Possible Side Effects";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Possible Side Effects";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Further Information";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Further Information";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Storage Advice";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Storage Advice";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Administration";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Administration";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Driving and Using Machines";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Driving and Using Machines";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "How to Use Medication";
+            this.dataGridViewTextBoxColumn14.HeaderText = "How to Use Medication";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "Patient  ID";
+            this.dataGridViewTextBoxColumn15.HeaderText = "Patient  ID";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Doctor\'s NHS No";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Doctor\'s NHS No";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 498);
+            this.ClientSize = new System.Drawing.Size(1078, 567);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(reference_NumberLabel);
             this.Controls.Add(this.reference_NumberTextBox);
             this.Controls.Add(name_of_TabletsLabel);
@@ -567,6 +856,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pharmacyBindingNavigator)).EndInit();
             this.pharmacyBindingNavigator.ResumeLayout(false);
             this.pharmacyBindingNavigator.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pharmacyDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -607,5 +899,31 @@
         private System.Windows.Forms.TextBox how_to_Use_MedicationTextBox;
         private System.Windows.Forms.TextBox patient__IDTextBox;
         private System.Windows.Forms.TextBox doctor_s_NHS_NoTextBox;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView pharmacyDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
     }
 }

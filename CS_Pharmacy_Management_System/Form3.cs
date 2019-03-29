@@ -42,7 +42,7 @@ namespace CS_Pharmacy_Management_System
         {
             DialogResult iExit;
 
-            iExit = MessageBox.Show("Confirm if you want to exit doctor's report", "Pharmacy Management System",
+            iExit = MessageBox.Show("Confirm if you want to exit GP Appointment", "Pharmacy Management System",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (iExit == DialogResult.Yes)

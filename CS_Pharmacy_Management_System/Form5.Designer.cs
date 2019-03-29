@@ -73,6 +73,29 @@
             this.patient_IDTextBox = new System.Windows.Forms.TextBox();
             this.per_Paid_PlanCheckBox = new System.Windows.Forms.CheckBox();
             this.patient_NHS_NumberTextBox = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnPrevious = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.paymentDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             invoice_NoLabel = new System.Windows.Forms.Label();
             amount_PaidLabel = new System.Windows.Forms.Label();
             method_of_PaymentLabel = new System.Windows.Forms.Label();
@@ -90,122 +113,138 @@
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingNavigator)).BeginInit();
             this.paymentBindingNavigator.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.paymentDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // invoice_NoLabel
             // 
             invoice_NoLabel.AutoSize = true;
-            invoice_NoLabel.Location = new System.Drawing.Point(304, 81);
+            invoice_NoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            invoice_NoLabel.Location = new System.Drawing.Point(12, 47);
             invoice_NoLabel.Name = "invoice_NoLabel";
-            invoice_NoLabel.Size = new System.Drawing.Size(62, 13);
+            invoice_NoLabel.Size = new System.Drawing.Size(87, 20);
             invoice_NoLabel.TabIndex = 1;
             invoice_NoLabel.Text = "Invoice No:";
             // 
             // amount_PaidLabel
             // 
             amount_PaidLabel.AutoSize = true;
-            amount_PaidLabel.Location = new System.Drawing.Point(304, 107);
+            amount_PaidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            amount_PaidLabel.Location = new System.Drawing.Point(12, 79);
             amount_PaidLabel.Name = "amount_PaidLabel";
-            amount_PaidLabel.Size = new System.Drawing.Size(70, 13);
+            amount_PaidLabel.Size = new System.Drawing.Size(104, 20);
             amount_PaidLabel.TabIndex = 3;
             amount_PaidLabel.Text = "Amount Paid:";
             // 
             // method_of_PaymentLabel
             // 
             method_of_PaymentLabel.AutoSize = true;
-            method_of_PaymentLabel.Location = new System.Drawing.Point(304, 133);
+            method_of_PaymentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            method_of_PaymentLabel.Location = new System.Drawing.Point(12, 111);
             method_of_PaymentLabel.Name = "method_of_PaymentLabel";
-            method_of_PaymentLabel.Size = new System.Drawing.Size(102, 13);
+            method_of_PaymentLabel.Size = new System.Drawing.Size(151, 20);
             method_of_PaymentLabel.TabIndex = 5;
             method_of_PaymentLabel.Text = "Method of Payment:";
             // 
             // visa_CardLabel
             // 
             visa_CardLabel.AutoSize = true;
-            visa_CardLabel.Location = new System.Drawing.Point(304, 159);
+            visa_CardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            visa_CardLabel.Location = new System.Drawing.Point(12, 143);
             visa_CardLabel.Name = "visa_CardLabel";
-            visa_CardLabel.Size = new System.Drawing.Size(55, 13);
+            visa_CardLabel.Size = new System.Drawing.Size(82, 20);
             visa_CardLabel.TabIndex = 7;
             visa_CardLabel.Text = "Visa Card:";
             // 
             // debit_CardLabel
             // 
             debit_CardLabel.AutoSize = true;
-            debit_CardLabel.Location = new System.Drawing.Point(304, 185);
+            debit_CardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            debit_CardLabel.Location = new System.Drawing.Point(12, 175);
             debit_CardLabel.Name = "debit_CardLabel";
-            debit_CardLabel.Size = new System.Drawing.Size(60, 13);
+            debit_CardLabel.Size = new System.Drawing.Size(89, 20);
             debit_CardLabel.TabIndex = 9;
             debit_CardLabel.Text = "Debit Card:";
             // 
             // master_CardLabel
             // 
             master_CardLabel.AutoSize = true;
-            master_CardLabel.Location = new System.Drawing.Point(304, 211);
+            master_CardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            master_CardLabel.Location = new System.Drawing.Point(302, 47);
             master_CardLabel.Name = "master_CardLabel";
-            master_CardLabel.Size = new System.Drawing.Size(67, 13);
+            master_CardLabel.Size = new System.Drawing.Size(100, 20);
             master_CardLabel.TabIndex = 11;
             master_CardLabel.Text = "Master Card:";
             // 
             // credit_CardLabel
             // 
             credit_CardLabel.AutoSize = true;
-            credit_CardLabel.Location = new System.Drawing.Point(304, 237);
+            credit_CardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            credit_CardLabel.Location = new System.Drawing.Point(302, 79);
             credit_CardLabel.Name = "credit_CardLabel";
-            credit_CardLabel.Size = new System.Drawing.Size(62, 13);
+            credit_CardLabel.Size = new System.Drawing.Size(93, 20);
             credit_CardLabel.TabIndex = 13;
             credit_CardLabel.Text = "Credit Card:";
             // 
             // driect_DebitLabel
             // 
             driect_DebitLabel.AutoSize = true;
-            driect_DebitLabel.Location = new System.Drawing.Point(304, 263);
+            driect_DebitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            driect_DebitLabel.Location = new System.Drawing.Point(302, 111);
             driect_DebitLabel.Name = "driect_DebitLabel";
-            driect_DebitLabel.Size = new System.Drawing.Size(66, 13);
+            driect_DebitLabel.Size = new System.Drawing.Size(97, 20);
             driect_DebitLabel.TabIndex = 15;
             driect_DebitLabel.Text = "Driect Debit:";
             // 
             // visa_Debit_CardLabel
             // 
             visa_Debit_CardLabel.AutoSize = true;
-            visa_Debit_CardLabel.Location = new System.Drawing.Point(304, 289);
+            visa_Debit_CardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            visa_Debit_CardLabel.Location = new System.Drawing.Point(302, 143);
             visa_Debit_CardLabel.Name = "visa_Debit_CardLabel";
-            visa_Debit_CardLabel.Size = new System.Drawing.Size(83, 13);
+            visa_Debit_CardLabel.Size = new System.Drawing.Size(124, 20);
             visa_Debit_CardLabel.TabIndex = 17;
             visa_Debit_CardLabel.Text = "Visa Debit Card:";
             // 
             // cash_PaidLabel
             // 
             cash_PaidLabel.AutoSize = true;
-            cash_PaidLabel.Location = new System.Drawing.Point(304, 315);
+            cash_PaidLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cash_PaidLabel.Location = new System.Drawing.Point(589, 47);
             cash_PaidLabel.Name = "cash_PaidLabel";
-            cash_PaidLabel.Size = new System.Drawing.Size(58, 13);
+            cash_PaidLabel.Size = new System.Drawing.Size(85, 20);
             cash_PaidLabel.TabIndex = 19;
             cash_PaidLabel.Text = "Cash Paid:";
             // 
             // patient_IDLabel
             // 
             patient_IDLabel.AutoSize = true;
-            patient_IDLabel.Location = new System.Drawing.Point(304, 341);
+            patient_IDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            patient_IDLabel.Location = new System.Drawing.Point(589, 79);
             patient_IDLabel.Name = "patient_IDLabel";
-            patient_IDLabel.Size = new System.Drawing.Size(57, 13);
+            patient_IDLabel.Size = new System.Drawing.Size(84, 20);
             patient_IDLabel.TabIndex = 21;
             patient_IDLabel.Text = "Patient ID:";
             // 
             // per_Paid_PlanLabel
             // 
             per_Paid_PlanLabel.AutoSize = true;
-            per_Paid_PlanLabel.Location = new System.Drawing.Point(304, 369);
+            per_Paid_PlanLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            per_Paid_PlanLabel.Location = new System.Drawing.Point(589, 113);
             per_Paid_PlanLabel.Name = "per_Paid_PlanLabel";
-            per_Paid_PlanLabel.Size = new System.Drawing.Size(74, 13);
+            per_Paid_PlanLabel.Size = new System.Drawing.Size(107, 20);
             per_Paid_PlanLabel.TabIndex = 23;
             per_Paid_PlanLabel.Text = "Per Paid Plan:";
             // 
             // patient_NHS_NumberLabel
             // 
             patient_NHS_NumberLabel.AutoSize = true;
-            patient_NHS_NumberLabel.Location = new System.Drawing.Point(304, 397);
+            patient_NHS_NumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            patient_NHS_NumberLabel.Location = new System.Drawing.Point(589, 143);
             patient_NHS_NumberLabel.Name = "patient_NHS_NumberLabel";
-            patient_NHS_NumberLabel.Size = new System.Drawing.Size(109, 13);
+            patient_NHS_NumberLabel.Size = new System.Drawing.Size(161, 20);
             patient_NHS_NumberLabel.TabIndex = 25;
             patient_NHS_NumberLabel.Text = "Patient NHS Number:";
             // 
@@ -259,7 +298,7 @@
             this.paymentBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.paymentBindingNavigator.Name = "paymentBindingNavigator";
             this.paymentBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.paymentBindingNavigator.Size = new System.Drawing.Size(884, 25);
+            this.paymentBindingNavigator.Size = new System.Drawing.Size(932, 25);
             this.paymentBindingNavigator.TabIndex = 0;
             this.paymentBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -360,95 +399,107 @@
             // invoice_NoTextBox
             // 
             this.invoice_NoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Invoice No", true));
-            this.invoice_NoTextBox.Location = new System.Drawing.Point(419, 78);
+            this.invoice_NoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.invoice_NoTextBox.Location = new System.Drawing.Point(180, 44);
             this.invoice_NoTextBox.Name = "invoice_NoTextBox";
-            this.invoice_NoTextBox.Size = new System.Drawing.Size(104, 20);
+            this.invoice_NoTextBox.Size = new System.Drawing.Size(104, 26);
             this.invoice_NoTextBox.TabIndex = 2;
             // 
             // amount_PaidTextBox
             // 
             this.amount_PaidTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Amount Paid", true));
-            this.amount_PaidTextBox.Location = new System.Drawing.Point(419, 104);
+            this.amount_PaidTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amount_PaidTextBox.Location = new System.Drawing.Point(180, 76);
             this.amount_PaidTextBox.Name = "amount_PaidTextBox";
-            this.amount_PaidTextBox.Size = new System.Drawing.Size(104, 20);
+            this.amount_PaidTextBox.Size = new System.Drawing.Size(104, 26);
             this.amount_PaidTextBox.TabIndex = 4;
             // 
             // method_of_PaymentTextBox
             // 
             this.method_of_PaymentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Method of Payment", true));
-            this.method_of_PaymentTextBox.Location = new System.Drawing.Point(419, 130);
+            this.method_of_PaymentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.method_of_PaymentTextBox.Location = new System.Drawing.Point(180, 108);
             this.method_of_PaymentTextBox.Name = "method_of_PaymentTextBox";
-            this.method_of_PaymentTextBox.Size = new System.Drawing.Size(104, 20);
+            this.method_of_PaymentTextBox.Size = new System.Drawing.Size(104, 26);
             this.method_of_PaymentTextBox.TabIndex = 6;
             // 
             // visa_CardTextBox
             // 
             this.visa_CardTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Visa Card", true));
-            this.visa_CardTextBox.Location = new System.Drawing.Point(419, 156);
+            this.visa_CardTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visa_CardTextBox.Location = new System.Drawing.Point(180, 140);
             this.visa_CardTextBox.Name = "visa_CardTextBox";
-            this.visa_CardTextBox.Size = new System.Drawing.Size(104, 20);
+            this.visa_CardTextBox.Size = new System.Drawing.Size(104, 26);
             this.visa_CardTextBox.TabIndex = 8;
             // 
             // debit_CardTextBox
             // 
             this.debit_CardTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Debit Card", true));
-            this.debit_CardTextBox.Location = new System.Drawing.Point(419, 182);
+            this.debit_CardTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.debit_CardTextBox.Location = new System.Drawing.Point(180, 172);
             this.debit_CardTextBox.Name = "debit_CardTextBox";
-            this.debit_CardTextBox.Size = new System.Drawing.Size(104, 20);
+            this.debit_CardTextBox.Size = new System.Drawing.Size(104, 26);
             this.debit_CardTextBox.TabIndex = 10;
             // 
             // master_CardTextBox
             // 
             this.master_CardTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Master Card", true));
-            this.master_CardTextBox.Location = new System.Drawing.Point(419, 208);
+            this.master_CardTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.master_CardTextBox.Location = new System.Drawing.Point(470, 44);
             this.master_CardTextBox.Name = "master_CardTextBox";
-            this.master_CardTextBox.Size = new System.Drawing.Size(104, 20);
+            this.master_CardTextBox.Size = new System.Drawing.Size(104, 26);
             this.master_CardTextBox.TabIndex = 12;
             // 
             // credit_CardTextBox
             // 
             this.credit_CardTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Credit Card", true));
-            this.credit_CardTextBox.Location = new System.Drawing.Point(419, 234);
+            this.credit_CardTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.credit_CardTextBox.Location = new System.Drawing.Point(470, 76);
             this.credit_CardTextBox.Name = "credit_CardTextBox";
-            this.credit_CardTextBox.Size = new System.Drawing.Size(104, 20);
+            this.credit_CardTextBox.Size = new System.Drawing.Size(104, 26);
             this.credit_CardTextBox.TabIndex = 14;
             // 
             // driect_DebitTextBox
             // 
             this.driect_DebitTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Driect Debit", true));
-            this.driect_DebitTextBox.Location = new System.Drawing.Point(419, 260);
+            this.driect_DebitTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.driect_DebitTextBox.Location = new System.Drawing.Point(470, 108);
             this.driect_DebitTextBox.Name = "driect_DebitTextBox";
-            this.driect_DebitTextBox.Size = new System.Drawing.Size(104, 20);
+            this.driect_DebitTextBox.Size = new System.Drawing.Size(104, 26);
             this.driect_DebitTextBox.TabIndex = 16;
             // 
             // visa_Debit_CardTextBox
             // 
             this.visa_Debit_CardTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Visa Debit Card", true));
-            this.visa_Debit_CardTextBox.Location = new System.Drawing.Point(419, 286);
+            this.visa_Debit_CardTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.visa_Debit_CardTextBox.Location = new System.Drawing.Point(470, 140);
             this.visa_Debit_CardTextBox.Name = "visa_Debit_CardTextBox";
-            this.visa_Debit_CardTextBox.Size = new System.Drawing.Size(104, 20);
+            this.visa_Debit_CardTextBox.Size = new System.Drawing.Size(104, 26);
             this.visa_Debit_CardTextBox.TabIndex = 18;
             // 
             // cash_PaidTextBox
             // 
             this.cash_PaidTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Cash Paid", true));
-            this.cash_PaidTextBox.Location = new System.Drawing.Point(419, 312);
+            this.cash_PaidTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cash_PaidTextBox.Location = new System.Drawing.Point(757, 44);
             this.cash_PaidTextBox.Name = "cash_PaidTextBox";
-            this.cash_PaidTextBox.Size = new System.Drawing.Size(104, 20);
+            this.cash_PaidTextBox.Size = new System.Drawing.Size(104, 26);
             this.cash_PaidTextBox.TabIndex = 20;
             // 
             // patient_IDTextBox
             // 
             this.patient_IDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Patient ID", true));
-            this.patient_IDTextBox.Location = new System.Drawing.Point(419, 338);
+            this.patient_IDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patient_IDTextBox.Location = new System.Drawing.Point(757, 76);
             this.patient_IDTextBox.Name = "patient_IDTextBox";
-            this.patient_IDTextBox.Size = new System.Drawing.Size(104, 20);
+            this.patient_IDTextBox.Size = new System.Drawing.Size(104, 26);
             this.patient_IDTextBox.TabIndex = 22;
             // 
             // per_Paid_PlanCheckBox
             // 
             this.per_Paid_PlanCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.paymentBindingSource, "Per Paid Plan", true));
-            this.per_Paid_PlanCheckBox.Location = new System.Drawing.Point(419, 364);
+            this.per_Paid_PlanCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.per_Paid_PlanCheckBox.Location = new System.Drawing.Point(757, 108);
             this.per_Paid_PlanCheckBox.Name = "per_Paid_PlanCheckBox";
             this.per_Paid_PlanCheckBox.Size = new System.Drawing.Size(104, 24);
             this.per_Paid_PlanCheckBox.TabIndex = 24;
@@ -458,16 +509,224 @@
             // patient_NHS_NumberTextBox
             // 
             this.patient_NHS_NumberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.paymentBindingSource, "Patient NHS Number", true));
-            this.patient_NHS_NumberTextBox.Location = new System.Drawing.Point(419, 394);
+            this.patient_NHS_NumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patient_NHS_NumberTextBox.Location = new System.Drawing.Point(757, 140);
             this.patient_NHS_NumberTextBox.Name = "patient_NHS_NumberTextBox";
-            this.patient_NHS_NumberTextBox.Size = new System.Drawing.Size(104, 20);
+            this.patient_NHS_NumberTextBox.Size = new System.Drawing.Size(104, 26);
             this.patient_NHS_NumberTextBox.TabIndex = 26;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.btnExit);
+            this.panel2.Controls.Add(this.btnClose);
+            this.panel2.Controls.Add(this.btnSave);
+            this.panel2.Controls.Add(this.btnPrevious);
+            this.panel2.Controls.Add(this.btnNext);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.btnAdd);
+            this.panel2.Location = new System.Drawing.Point(205, 222);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(650, 50);
+            this.panel2.TabIndex = 35;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(557, 3);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(86, 40);
+            this.btnExit.TabIndex = 0;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(465, 3);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(86, 40);
+            this.btnClose.TabIndex = 0;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnCloseClick);
+            // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(373, 3);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(86, 40);
+            this.btnSave.TabIndex = 0;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnPrevious
+            // 
+            this.btnPrevious.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrevious.Location = new System.Drawing.Point(281, 3);
+            this.btnPrevious.Name = "btnPrevious";
+            this.btnPrevious.Size = new System.Drawing.Size(86, 40);
+            this.btnPrevious.TabIndex = 0;
+            this.btnPrevious.Text = "Previous";
+            this.btnPrevious.UseVisualStyleBackColor = true;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(189, 3);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(86, 40);
+            this.btnNext.TabIndex = 0;
+            this.btnNext.Text = "Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(97, 3);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(86, 40);
+            this.btnDelete.TabIndex = 0;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(5, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(86, 40);
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.paymentDataGridView);
+            this.panel1.Location = new System.Drawing.Point(12, 305);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(905, 251);
+            this.panel1.TabIndex = 36;
+            // 
+            // paymentDataGridView
+            // 
+            this.paymentDataGridView.AutoGenerateColumns = false;
+            this.paymentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.paymentDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewCheckBoxColumn1,
+            this.dataGridViewTextBoxColumn12});
+            this.paymentDataGridView.DataSource = this.paymentBindingSource;
+            this.paymentDataGridView.Location = new System.Drawing.Point(3, 3);
+            this.paymentDataGridView.Name = "paymentDataGridView";
+            this.paymentDataGridView.Size = new System.Drawing.Size(895, 233);
+            this.paymentDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Invoice No";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Invoice No";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Amount Paid";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Amount Paid";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Method of Payment";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Method of Payment";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Visa Card";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Visa Card";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Debit Card";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Debit Card";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Master Card";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Master Card";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Credit Card";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Credit Card";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Driect Debit";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Driect Debit";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Visa Debit Card";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Visa Debit Card";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Cash Paid";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Cash Paid";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Patient ID";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Patient ID";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Per Paid Plan";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Per Paid Plan";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Patient NHS Number";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Patient NHS Number";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 461);
+            this.ClientSize = new System.Drawing.Size(932, 561);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(invoice_NoLabel);
             this.Controls.Add(this.invoice_NoTextBox);
             this.Controls.Add(amount_PaidLabel);
@@ -503,6 +762,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.paymentBindingNavigator)).EndInit();
             this.paymentBindingNavigator.ResumeLayout(false);
             this.paymentBindingNavigator.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.paymentDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -540,5 +802,28 @@
         private System.Windows.Forms.TextBox patient_IDTextBox;
         private System.Windows.Forms.CheckBox per_Paid_PlanCheckBox;
         private System.Windows.Forms.TextBox patient_NHS_NumberTextBox;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnPrevious;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView paymentDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
     }
 }
