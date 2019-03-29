@@ -31,5 +31,58 @@ namespace CS_Pharmacy_Management_System
             this.doctorTableAdapter.Fill(this.pharmacyDataSet.Doctor);
 
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            DialogResult iExit;
+
+            iExit = MessageBox.Show("Confirm if you want to exit", "Pharmacy Management System",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (iExit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnCloseClick(object sender, EventArgs e)
+        {
+            DialogResult iExit;
+
+            iExit = MessageBox.Show("Confirm if you want to exit doctor's report", "Pharmacy Management System",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (iExit == DialogResult.Yes)
+            {
+          
+            }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.doctorBindingSource.AddNew();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            this.doctorBindingSource.RemoveCurrent();
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            this.doctorBindingSource.MoveNext();
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            this.doctorBindingSource.MovePrevious();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.doctorBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.pharmacyDataSet);
+        }
     }
 }
